@@ -1,0 +1,1364 @@
+<html>
+<head>
+<title>TestNG:  Compex_TestsList01</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Compex_TestsList01</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/20/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Aug 19 09:05:13 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>20 seconds (20601 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.LoginAsSuperUser()'><b>LoginAsSuperUser</b><br>Test class: autoFW.TESTS.Compex_tests<br>Parameters: https://www.cpxlegaltest.com/, SuperUser, Compex@2017<br/>
+<a href="#Output-1350720002" onClick='toggleBox("Output-1350720002", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1350720002" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1350720002">
+Logging in at url: https://www.cpxlegaltest.com/<br/ >User: SuperUser<br/ >Pwd: Compex@2017<br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at autoFW.autfns.AUTFunctions.loginWithGivenUserName(AUTFunctions.java:116)
+	at autoFW.TESTS.Compex_tests.LoginAsSuperUser(Compex_tests.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1350720002", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1350720002'><pre>java.lang.NullPointerException
+	at autoFW.autfns.AUTFunctions.loginWithGivenUserName(AUTFunctions.java:116)
+	at autoFW.TESTS.Compex_tests.LoginAsSuperUser(Compex_tests.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>autoFW.TESTS.Compex_tests@26e356f0</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.SearchByPlaintiff()'><b>SearchByPlaintiff</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-1859823482" onClick='toggleBox("Output-1859823482", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1859823482" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1859823482">
+Searching for orders with Plaintiff Name: Test1<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchByPlaintiff(AUTFunctions.java:722)
+	at autoFW.TESTS.Compex_tests.SearchByPlaintiff(Compex_tests.java:179)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1859823482", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1859823482'><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchByPlaintiff(AUTFunctions.java:722)
+	at autoFW.TESTS.Compex_tests.SearchByPlaintiff(Compex_tests.java:179)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>autoFW.TESTS.Compex_tests@26e356f0</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.AddLocation()'><b>AddLocation</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-564893839" onClick='toggleBox("Output-564893839", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-564893839" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-564893839">
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.ExpandAllOrders(AUTFunctions.java:637)
+	at autoFW.autfns.AUTFunctions.AddLocation(AUTFunctions.java:1366)
+	at autoFW.TESTS.Compex_tests.AddLocation(Compex_tests.java:270)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace564893839", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace564893839'><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.ExpandAllOrders(AUTFunctions.java:637)
+	at autoFW.autfns.AUTFunctions.AddLocation(AUTFunctions.java:1366)
+	at autoFW.TESTS.Compex_tests.AddLocation(Compex_tests.java:270)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>3</td>
+<td>autoFW.TESTS.Compex_tests@26e356f0</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.VerifyLoginAsCustodian()'><b>VerifyLoginAsCustodian</b><br>Test class: autoFW.TESTS.Compex_tests<br>Parameters: https://www.cpxlegaltest.com/, TestCusto123, Compex@2017<br/>
+<a href="#Output-501036152" onClick='toggleBox("Output-501036152", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-501036152" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-501036152">
+Logging in at url: https://www.cpxlegaltest.com/<br/ >Custodian User: TestCusto123<br/ >Pwd: Compex@2017<br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at autoFW.autfns.AUTFunctions.loginAsCustodian(AUTFunctions.java:150)
+	at autoFW.TESTS.Compex_tests.VerifyLoginAsCustodian(Compex_tests.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace501036152", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace501036152'><pre>java.lang.NullPointerException
+	at autoFW.autfns.AUTFunctions.loginAsCustodian(AUTFunctions.java:150)
+	at autoFW.TESTS.Compex_tests.VerifyLoginAsCustodian(Compex_tests.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>autoFW.TESTS.Compex_tests@26e356f0</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.SearchBydefendant()'><b>SearchBydefendant</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-1658704411" onClick='toggleBox("Output-1658704411", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1658704411" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1658704411">
+Searching for orders with Defendant : Robert Crown<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchBydefendant(AUTFunctions.java:840)
+	at autoFW.TESTS.Compex_tests.SearchBydefendant(Compex_tests.java:190)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1658704411", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1658704411'><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchBydefendant(AUTFunctions.java:840)
+	at autoFW.TESTS.Compex_tests.SearchBydefendant(Compex_tests.java:190)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>autoFW.TESTS.Compex_tests@26e356f0</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.SearchByOrderNum1()'><b>SearchByOrderNum1</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-1753259207" onClick='toggleBox("Output-1753259207", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1753259207" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1753259207">
+Searching for order: CA1094395<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchByOrderNum(AUTFunctions.java:562)
+	at autoFW.TESTS.Compex_tests.SearchByOrderNum1(Compex_tests.java:161)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1753259207", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1753259207'><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchByOrderNum(AUTFunctions.java:562)
+	at autoFW.TESTS.Compex_tests.SearchByOrderNum1(Compex_tests.java:161)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>autoFW.TESTS.Compex_tests@26e356f0</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.Logout()'><b>Logout</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-1223303171" onClick='toggleBox("Output-1223303171", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1223303171" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1223303171">
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.logout(AUTFunctions.java:177)
+	at autoFW.TESTS.Compex_tests.Logout(Compex_tests.java:130)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1223303171", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1223303171'><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.logout(AUTFunctions.java:177)
+	at autoFW.TESTS.Compex_tests.Logout(Compex_tests.java:130)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>autoFW.TESTS.Compex_tests@26e356f0</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.VerifyLoginAsSuperUser()'><b>VerifyLoginAsSuperUser</b><br>Test class: autoFW.TESTS.Compex_tests<br>Parameters: https://www.cpxlegaltest.com/, SuperUser, Compex@2017<br/>
+<a href="#Output-29369803" onClick='toggleBox("Output-29369803", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29369803" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29369803">
+Logging in at url: https://www.cpxlegaltest.com/<br/ >User: SuperUser<br/ >Pwd: Compex@2017<br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at autoFW.autfns.AUTFunctions.loginWithGivenUserName(AUTFunctions.java:116)
+	at autoFW.TESTS.Compex_tests.VerifyLoginAsSuperUser(Compex_tests.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29369803", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29369803'><pre>java.lang.NullPointerException
+	at autoFW.autfns.AUTFunctions.loginWithGivenUserName(AUTFunctions.java:116)
+	at autoFW.TESTS.Compex_tests.VerifyLoginAsSuperUser(Compex_tests.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>autoFW.TESTS.Compex_tests@26e356f0</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.AddComment_SingleOrderLocation()'><b>AddComment_SingleOrderLocation</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-905488851" onClick='toggleBox("Output-905488851", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-905488851" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-905488851">
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.ExpandAllOrders(AUTFunctions.java:637)
+	at autoFW.autfns.AUTFunctions.AddComment(AUTFunctions.java:1283)
+	at autoFW.TESTS.Compex_tests.AddComment_SingleOrderLocation(Compex_tests.java:258)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace905488851", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace905488851'><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.ExpandAllOrders(AUTFunctions.java:637)
+	at autoFW.autfns.AUTFunctions.AddComment(AUTFunctions.java:1283)
+	at autoFW.TESTS.Compex_tests.AddComment_SingleOrderLocation(Compex_tests.java:258)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>3</td>
+<td>autoFW.TESTS.Compex_tests@26e356f0</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.VerifyLoginAsClientContact()'><b>VerifyLoginAsClientContact</b><br>Test class: autoFW.TESTS.Compex_tests<br>Parameters: https://www.cpxlegaltest.com/, teresam, Compex@2017<br/>
+<a href="#Output-1137667747" onClick='toggleBox("Output-1137667747", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1137667747" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1137667747">
+Logging in at url: https://www.cpxlegaltest.com/<br/ >User: teresam<br/ >Pwd: Compex@2017<br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at autoFW.autfns.AUTFunctions.loginWithGivenUserName(AUTFunctions.java:116)
+	at autoFW.TESTS.Compex_tests.VerifyLoginAsClientContact(Compex_tests.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1137667747", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1137667747'><pre>java.lang.NullPointerException
+	at autoFW.autfns.AUTFunctions.loginWithGivenUserName(AUTFunctions.java:116)
+	at autoFW.TESTS.Compex_tests.VerifyLoginAsClientContact(Compex_tests.java:122)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>autoFW.TESTS.Compex_tests@26e356f0</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.UploadDocument_SingleOrder()'><b>UploadDocument_SingleOrder</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-1312348533" onClick='toggleBox("Output-1312348533", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1312348533" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1312348533">
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.ExpandAllOrders(AUTFunctions.java:637)
+	at autoFW.autfns.AUTFunctions.UploadDocument(AUTFunctions.java:1108)
+	at autoFW.TESTS.Compex_tests.UploadDocument_SingleOrder(Compex_tests.java:240)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1312348533", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1312348533'><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.ExpandAllOrders(AUTFunctions.java:637)
+	at autoFW.autfns.AUTFunctions.UploadDocument(AUTFunctions.java:1108)
+	at autoFW.TESTS.Compex_tests.UploadDocument_SingleOrder(Compex_tests.java:240)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>3</td>
+<td>autoFW.TESTS.Compex_tests@26e356f0</td></tr>
+<tr>
+<td title='autoFW.TESTS.Cleanup.CleanupTest()'><b>CleanupTest</b><br>Test class: autoFW.TESTS.Cleanup</td>
+<td><div><pre>java.lang.NullPointerException
+	at autoFW.TESTS.Cleanup.CleanupTest(Cleanup.java:13)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1676010932", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1676010932'><pre>java.lang.NullPointerException
+	at autoFW.TESTS.Cleanup.CleanupTest(Cleanup.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>autoFW.TESTS.Cleanup@47d9a273</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.SearchByattorney()'><b>SearchByattorney</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-381930033" onClick='toggleBox("Output-381930033", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-381930033" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-381930033">
+Searching for orders with Attorney : Michael Spongeberg (123)<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchByattorney(AUTFunctions.java:878)
+	at autoFW.TESTS.Compex_tests.SearchByattorney(Compex_tests.java:195)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace381930033", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace381930033'><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchByattorney(AUTFunctions.java:878)
+	at autoFW.TESTS.Compex_tests.SearchByattorney(Compex_tests.java:195)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>autoFW.TESTS.Compex_tests@26e356f0</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.VerifyLoginAsClientManager()'><b>VerifyLoginAsClientManager</b><br>Test class: autoFW.TESTS.Compex_tests<br>Parameters: https://www.cpxlegaltest.com/, arjoshi, Compex@2017<br/>
+<a href="#Output-935722070" onClick='toggleBox("Output-935722070", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-935722070" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-935722070">
+Logging in at url: https://www.cpxlegaltest.com/<br/ >User: arjoshi<br/ >Pwd: Compex@2017<br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at autoFW.autfns.AUTFunctions.loginWithGivenUserName(AUTFunctions.java:116)
+	at autoFW.TESTS.Compex_tests.VerifyLoginAsClientManager(Compex_tests.java:94)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace935722070", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace935722070'><pre>java.lang.NullPointerException
+	at autoFW.autfns.AUTFunctions.loginWithGivenUserName(AUTFunctions.java:116)
+	at autoFW.TESTS.Compex_tests.VerifyLoginAsClientManager(Compex_tests.java:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>autoFW.TESTS.Compex_tests@26e356f0</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.SearchByClaimNum()'><b>SearchByClaimNum</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-609879567" onClick='toggleBox("Output-609879567", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-609879567" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-609879567">
+Searching for orders with claim #: 45678<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchByClaimNum(AUTFunctions.java:662)
+	at autoFW.TESTS.Compex_tests.SearchByClaimNum(Compex_tests.java:173)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace609879567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace609879567'><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchByClaimNum(AUTFunctions.java:662)
+	at autoFW.TESTS.Compex_tests.SearchByClaimNum(Compex_tests.java:173)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>autoFW.TESTS.Compex_tests@26e356f0</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.SearchBycaseNum()'><b>SearchBycaseNum</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-509858326" onClick='toggleBox("Output-509858326", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-509858326" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-509858326">
+Searching for orders with caseNum : 7777777<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchBycaseNum(AUTFunctions.java:759)
+	at autoFW.TESTS.Compex_tests.SearchBycaseNum(Compex_tests.java:185)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace509858326", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace509858326'><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchBycaseNum(AUTFunctions.java:759)
+	at autoFW.TESTS.Compex_tests.SearchBycaseNum(Compex_tests.java:185)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>autoFW.TESTS.Compex_tests@26e356f0</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.Cancel_SingleOrderLocation()'><b>Cancel_SingleOrderLocation</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-691096777" onClick='toggleBox("Output-691096777", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-691096777" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-691096777">
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.ExpandAllOrders(AUTFunctions.java:637)
+	at autoFW.autfns.AUTFunctions.CancelOrder(AUTFunctions.java:1199)
+	at autoFW.TESTS.Compex_tests.Cancel_SingleOrderLocation(Compex_tests.java:252)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace691096777", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace691096777'><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.ExpandAllOrders(AUTFunctions.java:637)
+	at autoFW.autfns.AUTFunctions.CancelOrder(AUTFunctions.java:1199)
+	at autoFW.TESTS.Compex_tests.Cancel_SingleOrderLocation(Compex_tests.java:252)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>3</td>
+<td>autoFW.TESTS.Compex_tests@26e356f0</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.SearchByFilm()'><b>SearchByFilm</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-761973299" onClick='toggleBox("Output-761973299", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-761973299" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-761973299">
+Searching for order (with Film) : CA1094247 --> 001<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchByFilm(AUTFunctions.java:700)
+	at autoFW.TESTS.Compex_tests.SearchByFilm(Compex_tests.java:209)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace761973299", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace761973299'><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchByFilm(AUTFunctions.java:700)
+	at autoFW.TESTS.Compex_tests.SearchByFilm(Compex_tests.java:209)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>autoFW.TESTS.Compex_tests@26e356f0</td></tr>
+<tr>
+<td title='autoFW.TESTS.Setup.Init()'><b>Init</b><br>Test class: autoFW.TESTS.Setup</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 108
+Current browser version is 116.0.5845.96 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-Q1UB2OV&apos;, ip: &apos;192.168.30.84&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], prefs: {download.default_directory: C:\Users\raghuwansh.shisode...}}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], prefs: {download.default_directory: C:\Users\raghuwansh.shisode...}}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:168)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:104)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:80)
+	at autoFW.TESTS.Setup.Init(Setup.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace538618049", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace538618049'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 108
+Current browser version is 116.0.5845.96 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-Q1UB2OV&apos;, ip: &apos;192.168.30.84&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], prefs: {download.default_directory: C:\Users\raghuwansh.shisode...}}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], prefs: {download.default_directory: C:\Users\raghuwansh.shisode...}}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:168)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:104)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:80)
+	at autoFW.TESTS.Setup.Init(Setup.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>8</td>
+<td>autoFW.TESTS.Setup@58695725</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.SearchByadjuster()'><b>SearchByadjuster</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-756637412" onClick='toggleBox("Output-756637412", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-756637412" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-756637412">
+Searching for orders with adjuster : Adam Dodge<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchByadjuster(AUTFunctions.java:915)
+	at autoFW.TESTS.Compex_tests.SearchByadjuster(Compex_tests.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace756637412", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace756637412'><pre>java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchByadjuster(AUTFunctions.java:915)
+	at autoFW.TESTS.Compex_tests.SearchByadjuster(Compex_tests.java:202)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>autoFW.TESTS.Compex_tests@26e356f0</td></tr>
+</table><p>
+</body>
+</html>

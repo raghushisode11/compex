@@ -1,0 +1,1761 @@
+<html>
+<head>
+<title>TestNG:  Compex_TestsList01</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Compex_TestsList01</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/7/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jan 27 10:09:21 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>654 seconds (654143 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.SearchByFilm()'><b>SearchByFilm</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-1504964962" onClick='toggleBox("Output-1504964962", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1504964962" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1504964962">
+Searching for order (with Film) : CA1094247 --> 001<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Clicked successfully on WebElement: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Moving mouse a bit..<br /><br/>
+Mouse moved successfully<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//li[text()='Order#']"<br /><br/>
+Clicked successfully on WebElement: "//li[text()='Order#']"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='txtSearchCriteria']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='txtSearchCriteria']", content: "CA1094247"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='btnSearch']"<br /><br/>
+Clicked successfully on WebElement: "//input[@id='btnSearch']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@id=&apos;PopupTitle&apos;]&quot;}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-Q1UB2OV&apos;, ip: &apos;192.168.203.231&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3698a58abff443ea89a8a936d78a2c46, findElement {using=xpath, value=//h2[@id=&apos;PopupTitle&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:618)
+	at autoFW.autfns.AUTFunctions.SearchByFilm(AUTFunctions.java:700)
+	at autoFW.TESTS.Compex_tests.SearchByFilm(Compex_tests.java:209)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1504964962", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1504964962'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@id=&apos;PopupTitle&apos;]&quot;}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-Q1UB2OV&apos;, ip: &apos;192.168.203.231&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3698a58abff443ea89a8a936d78a2c46, findElement {using=xpath, value=//h2[@id=&apos;PopupTitle&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46
+	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:618)
+	at autoFW.autfns.AUTFunctions.SearchByFilm(AUTFunctions.java:700)
+	at autoFW.TESTS.Compex_tests.SearchByFilm(Compex_tests.java:209)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>8</td>
+<td>autoFW.TESTS.Compex_tests@2a7f1f10</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.SearchByadjuster()'><b>SearchByadjuster</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-1886127662" onClick='toggleBox("Output-1886127662", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1886127662" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1886127662">
+Searching for orders with adjuster : Adam Dodge<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Clicked successfully on WebElement: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Moving mouse a bit..<br /><br/>
+Mouse moved successfully<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//li[text()='Adjuster']"<br /><br/>
+Clicked successfully on WebElement: "//li[text()='Adjuster']"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='txtSearchCriteria']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='txtSearchCriteria']", content: "Adam Dodge"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='btnSearch']"<br /><br/>
+Clicked successfully on WebElement: "//input[@id='btnSearch']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@id=&apos;PopupTitle&apos;]&quot;}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-Q1UB2OV&apos;, ip: &apos;192.168.203.231&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3698a58abff443ea89a8a936d78a2c46, findElement {using=xpath, value=//h2[@id=&apos;PopupTitle&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:618)
+	at autoFW.autfns.AUTFunctions.SearchByadjuster(AUTFunctions.java:915)
+	at autoFW.TESTS.Compex_tests.SearchByadjuster(Compex_tests.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1886127662", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1886127662'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@id=&apos;PopupTitle&apos;]&quot;}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-Q1UB2OV&apos;, ip: &apos;192.168.203.231&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3698a58abff443ea89a8a936d78a2c46, findElement {using=xpath, value=//h2[@id=&apos;PopupTitle&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46
+	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:618)
+	at autoFW.autfns.AUTFunctions.SearchByadjuster(AUTFunctions.java:915)
+	at autoFW.TESTS.Compex_tests.SearchByadjuster(Compex_tests.java:202)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>autoFW.TESTS.Compex_tests@2a7f1f10</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.SearchByPlaintiff()'><b>SearchByPlaintiff</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-515495578" onClick='toggleBox("Output-515495578", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-515495578" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-515495578">
+Searching for orders with Plaintiff Name: Test1<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Clicked successfully on WebElement: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Moving mouse a bit..<br /><br/>
+Mouse moved successfully<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//li[text()='Plaintiff']"<br /><br/>
+Clicked successfully on WebElement: "//li[text()='Plaintiff']"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='txtSearchCriteria']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='txtSearchCriteria']", content: "Test1"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='btnSearch']"<br /><br/>
+Clicked successfully on WebElement: "//input[@id='btnSearch']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@id=&apos;PopupTitle&apos;]&quot;}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-Q1UB2OV&apos;, ip: &apos;192.168.203.231&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3698a58abff443ea89a8a936d78a2c46, findElement {using=xpath, value=//h2[@id=&apos;PopupTitle&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:618)
+	at autoFW.autfns.AUTFunctions.SearchByPlaintiff(AUTFunctions.java:722)
+	at autoFW.TESTS.Compex_tests.SearchByPlaintiff(Compex_tests.java:179)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace515495578", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace515495578'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@id=&apos;PopupTitle&apos;]&quot;}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-Q1UB2OV&apos;, ip: &apos;192.168.203.231&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3698a58abff443ea89a8a936d78a2c46, findElement {using=xpath, value=//h2[@id=&apos;PopupTitle&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46
+	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:618)
+	at autoFW.autfns.AUTFunctions.SearchByPlaintiff(AUTFunctions.java:722)
+	at autoFW.TESTS.Compex_tests.SearchByPlaintiff(Compex_tests.java:179)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>7</td>
+<td>autoFW.TESTS.Compex_tests@2a7f1f10</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.SearchBycaseNum()'><b>SearchBycaseNum</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-1720994940" onClick='toggleBox("Output-1720994940", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1720994940" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1720994940">
+Searching for orders with caseNum : 7777777<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Clicked successfully on WebElement: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Moving mouse a bit..<br /><br/>
+Mouse moved successfully<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//li[text()='Case#']"<br /><br/>
+Clicked successfully on WebElement: "//li[text()='Case#']"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='txtSearchCriteria']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='txtSearchCriteria']", content: "7777777"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='btnSearch']"<br /><br/>
+Clicked successfully on WebElement: "//input[@id='btnSearch']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@id=&apos;PopupTitle&apos;]&quot;}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-Q1UB2OV&apos;, ip: &apos;192.168.203.231&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3698a58abff443ea89a8a936d78a2c46, findElement {using=xpath, value=//h2[@id=&apos;PopupTitle&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:618)
+	at autoFW.autfns.AUTFunctions.SearchBycaseNum(AUTFunctions.java:759)
+	at autoFW.TESTS.Compex_tests.SearchBycaseNum(Compex_tests.java:185)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1720994940", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1720994940'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@id=&apos;PopupTitle&apos;]&quot;}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-Q1UB2OV&apos;, ip: &apos;192.168.203.231&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3698a58abff443ea89a8a936d78a2c46, findElement {using=xpath, value=//h2[@id=&apos;PopupTitle&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46
+	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:618)
+	at autoFW.autfns.AUTFunctions.SearchBycaseNum(AUTFunctions.java:759)
+	at autoFW.TESTS.Compex_tests.SearchBycaseNum(Compex_tests.java:185)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>6</td>
+<td>autoFW.TESTS.Compex_tests@2a7f1f10</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.SearchByClaimNum()'><b>SearchByClaimNum</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-658369552" onClick='toggleBox("Output-658369552", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-658369552" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-658369552">
+Searching for orders with claim #: 45678<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Clicked successfully on WebElement: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Moving mouse a bit..<br /><br/>
+Mouse moved successfully<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//li[text()='Claim#']"<br /><br/>
+Clicked successfully on WebElement: "//li[text()='Claim#']"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='txtSearchCriteria']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='txtSearchCriteria']", content: "45678"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='btnSearch']"<br /><br/>
+Clicked successfully on WebElement: "//input[@id='btnSearch']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<b style='color:blue'>Verify search popup title text contains '45678'</b><br /><br/>
+<span style='color:green'><b>Expected:</b><br />true<br /><b>Actual:</b><br />true<br /></span><br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[contains(@class,'orderstatuscomments')]//button[@type='button'][span[text()='Display Orders']]/span"<br /><br/>
+Clicked successfully on WebElement: "//div[contains(@class,'orderstatuscomments')]//button[@type='button'][span[text()='Display Orders']]/span"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchExpandCollapse'][text()='Expand All']"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchExpandCollapse'][text()='Expand All']"<br /><br/>
+Clicked successfully on WebElement: "//a[@id='anchExpandCollapse'][text()='Expand All']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchExpandCollapse'][text()='Collapse All']"<br /><br/>
+Waited successfully for element with xpath: "//div[@id='OrderHeaderAll']//div[@class='t-grid-content']//thead/following-sibling::tbody/tr[last()]//a[@class='ViewOrder']//ancestor::tbody[2]//td[@class='orderNumCol']"<br /><br/>
+Waited successfully for element with xpath: "//div[@id='OrderHeaderAll']//div[@class='t-grid-content']//thead/following-sibling::tbody/tr[last()]//td[@class='checkboxCol']//li[@class='checkbox']"<br /><br/>
+Navigating to order: CA1094441 --> <br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[@id='OrderHeaderAll']//div[@class='t-grid-content']//thead/following-sibling::tbody/tr[last()]//td[@class='checkboxCol']//li[@class='checkbox']"<br /><br/>
+Clicked successfully on WebElement: "//div[@id='OrderHeaderAll']//div[@class='t-grid-content']//thead/following-sibling::tbody/tr[last()]//td[@class='checkboxCol']//li[@class='checkbox']"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[@id='viewdownloadAnch']"<br /><br/>
+Clicked successfully on WebElement: "//a[@id='viewdownloadAnch']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for element to no longer be visible: By.xpath: //div[@id='ajaxBusy'] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waited successfully for element with xpath: "//*[@id="TabHeader-2"]/a"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//*[@id="TabHeader-2"]/a"<br /><br/>
+Clicked successfully on WebElement: "//*[@id="TabHeader-2"]/a"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+<b style='color:blue'>Verify field "Claim #"</b><br /><br/>
+<span style='color:red'><b>Expected:</b><br />45678<br /><b>Actual:</b><br />123456789<br /></span><br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[@id='btnParentmodalDlg']"<br /><br/>
+Clicked successfully on WebElement: "//a[@id='btnParentmodalDlg']"<br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError:  expected [45678] but found [123456789]
+	at autoFW.objects.ObjectUtilities.DoAssert(ObjectUtilities.java:509)
+	at autoFW.objects.ObjectUtilities.DoAssert(ObjectUtilities.java:491)
+	at autoFW.autfns.AUTFunctions.verifyOrderFieldsInSecondPopup(AUTFunctions.java:525)
+	at autoFW.autfns.AUTFunctions.SearchByClaimNum(AUTFunctions.java:687)
+	at autoFW.TESTS.Compex_tests.SearchByClaimNum(Compex_tests.java:173)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace658369552", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace658369552'><pre>java.lang.AssertionError:  expected [45678] but found [123456789]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at autoFW.objects.ObjectUtilities.DoAssert(ObjectUtilities.java:509)
+	at autoFW.objects.ObjectUtilities.DoAssert(ObjectUtilities.java:491)
+	at autoFW.autfns.AUTFunctions.verifyOrderFieldsInSecondPopup(AUTFunctions.java:525)
+	at autoFW.autfns.AUTFunctions.SearchByClaimNum(AUTFunctions.java:687)
+	at autoFW.TESTS.Compex_tests.SearchByClaimNum(Compex_tests.java:173)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>61</td>
+<td>autoFW.TESTS.Compex_tests@2a7f1f10</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.SearchBydefendant()'><b>SearchBydefendant</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-878238390" onClick='toggleBox("Output-878238390", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-878238390" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-878238390">
+Searching for orders with Defendant : Robert Crown<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Clicked successfully on WebElement: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Moving mouse a bit..<br /><br/>
+Mouse moved successfully<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//li[text()='Defendant']"<br /><br/>
+Clicked successfully on WebElement: "//li[text()='Defendant']"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='txtSearchCriteria']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='txtSearchCriteria']", content: "Robert Crown"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='btnSearch']"<br /><br/>
+Clicked successfully on WebElement: "//input[@id='btnSearch']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@id=&apos;PopupTitle&apos;]&quot;}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-Q1UB2OV&apos;, ip: &apos;192.168.203.231&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3698a58abff443ea89a8a936d78a2c46, findElement {using=xpath, value=//h2[@id=&apos;PopupTitle&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:618)
+	at autoFW.autfns.AUTFunctions.SearchBydefendant(AUTFunctions.java:840)
+	at autoFW.TESTS.Compex_tests.SearchBydefendant(Compex_tests.java:190)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace878238390", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace878238390'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@id=&apos;PopupTitle&apos;]&quot;}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-Q1UB2OV&apos;, ip: &apos;192.168.203.231&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3698a58abff443ea89a8a936d78a2c46, findElement {using=xpath, value=//h2[@id=&apos;PopupTitle&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46
+	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:618)
+	at autoFW.autfns.AUTFunctions.SearchBydefendant(AUTFunctions.java:840)
+	at autoFW.TESTS.Compex_tests.SearchBydefendant(Compex_tests.java:190)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>6</td>
+<td>autoFW.TESTS.Compex_tests@2a7f1f10</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.SearchByattorney()'><b>SearchByattorney</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-1774331901" onClick='toggleBox("Output-1774331901", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1774331901" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1774331901">
+Searching for orders with Attorney : Michael Spongeberg (123)<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Clicked successfully on WebElement: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Moving mouse a bit..<br /><br/>
+Mouse moved successfully<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//li[text()='Attorney']"<br /><br/>
+Clicked successfully on WebElement: "//li[text()='Attorney']"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='txtSearchCriteria']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='txtSearchCriteria']", content: "Michael Spongeberg (123)"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='btnSearch']"<br /><br/>
+Clicked successfully on WebElement: "//input[@id='btnSearch']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@id=&apos;PopupTitle&apos;]&quot;}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-Q1UB2OV&apos;, ip: &apos;192.168.203.231&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3698a58abff443ea89a8a936d78a2c46, findElement {using=xpath, value=//h2[@id=&apos;PopupTitle&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:618)
+	at autoFW.autfns.AUTFunctions.SearchByattorney(AUTFunctions.java:878)
+	at autoFW.TESTS.Compex_tests.SearchByattorney(Compex_tests.java:195)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1774331901", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1774331901'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@id=&apos;PopupTitle&apos;]&quot;}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-Q1UB2OV&apos;, ip: &apos;192.168.203.231&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3698a58abff443ea89a8a936d78a2c46, findElement {using=xpath, value=//h2[@id=&apos;PopupTitle&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46
+	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:618)
+	at autoFW.autfns.AUTFunctions.SearchByattorney(AUTFunctions.java:878)
+	at autoFW.TESTS.Compex_tests.SearchByattorney(Compex_tests.java:195)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>9</td>
+<td>autoFW.TESTS.Compex_tests@2a7f1f10</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.LoginAsSuperUser()'><b>LoginAsSuperUser</b><br>Test class: autoFW.TESTS.Compex_tests<br>Parameters: https://www.cpxlegaltest.com/, SuperUser, Compex@2017<br/>
+<a href="#Output-267061647" onClick='toggleBox("Output-267061647", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-267061647" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-267061647">
+Logging in at url: https://www.cpxlegaltest.com/<br/ >User: SuperUser<br/ >Pwd: Compex@2017<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[(text()='Login') and (contains(@class, 'subnav-button'))]"<br /><br/>
+Clicked successfully on WebElement: "//a[(text()='Login') and (contains(@class, 'subnav-button'))]"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='username']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='username']", content: "SuperUser"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='password']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='password']", content: "Compex@2017"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//button[@id='loginform1-btlogin']"<br /><br/>
+Clicked successfully on WebElement: "//button[@id='loginform1-btlogin']"<br /><br/>
+Waiting for smallLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@class='loading-overlay-wrapper']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='loading-overlay-wrapper'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for smallLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@class='loading-overlay-wrapper']" was already invisible.<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waited successfully for element with xpath: "//a[text()='Logout']"<br /><br/>
+Logged in successfully.<br /><br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>autoFW.TESTS.Compex_tests@2a7f1f10</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.AddLocation()'><b>AddLocation</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-461567530" onClick='toggleBox("Output-461567530", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-461567530" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-461567530">
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchExpandCollapse'][text()='Expand All']"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchExpandCollapse'][text()='Expand All']"<br /><br/>
+Clicked successfully on WebElement: "//a[@id='anchExpandCollapse'][text()='Expand All']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchExpandCollapse'][text()='Collapse All']"<br /><br/>
+Waited successfully for element with xpath: "//input[starts-with(@name,'chkParent_')]"<br /><br/>
+<span style='color:blue'><b>Accessing order : CA1094247</b></span><br /><br/>
+<span style='color:blue'><b>Initial count of locations : 13</b></span><br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//input[starts-with(@name,'chkParent_')]"<br /><br/>
+Clicked successfully on WebElement: "//input[starts-with(@name,'chkParent_')]"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//li[@id='addLocationLI']"<br /><br/>
+Clicked successfully on WebElement: "//li[@id='addLocationLI']"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='search_loc_value']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='search_loc_value']", content: "alex"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//li[contains(@class,'ui-menu-item')][2]"<br /><br/>
+Clicked successfully on WebElement: "//li[contains(@class,'ui-menu-item')][2]"<br /><br/>
+Attempting to select item from dropdown..<br /><br/>
+Waited successfully for element with xpath: "//select[@id='rectype']"<br /><br/>
+Selected successfully item:     Dental from dropdown: "//select[@id='rectype']"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[text()='Confirm Selection']"<br /><br/>
+Clicked successfully on WebElement: "//a[text()='Confirm Selection']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='search_loc_value']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='search_loc_value']", content: "alex"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//li[contains(@class,'ui-menu-item')][2]"<br /><br/>
+Clicked successfully on WebElement: "//li[contains(@class,'ui-menu-item')][2]"<br /><br/>
+Attempting to select item from dropdown..<br /><br/>
+Waited successfully for element with xpath: "//select[@id='rectype']"<br /><br/>
+Selected successfully item:     Dental from dropdown: "//select[@id='rectype']"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[text()='Confirm Selection']"<br /><br/>
+Clicked successfully on WebElement: "//a[text()='Confirm Selection']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[@id='page-wizard-nav']/a[@id='formsubmitbutton']"<br /><br/>
+Clicked successfully on WebElement: "//div[@id='page-wizard-nav']/a[@id='formsubmitbutton']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[@id='page-wizard-nav']/a[@id='formsubmitbutton']"<br /><br/>
+Clicked successfully on WebElement: "//div[@id='page-wizard-nav']/a[@id='formsubmitbutton']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[@id='page-wizard-nav']/a[@id='formsubmitbutton']"<br /><br/>
+Clicked successfully on WebElement: "//div[@id='page-wizard-nav']/a[@id='formsubmitbutton']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[text()='MY ORDERS']"<br /><br/>
+Clicked successfully on WebElement: "//a[text()='MY ORDERS']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Clicked successfully on WebElement: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Moving mouse a bit..<br /><br/>
+Mouse moved successfully<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//li[text()='Order#']"<br /><br/>
+Clicked successfully on WebElement: "//li[text()='Order#']"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='txtSearchCriteria']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='txtSearchCriteria']", content: "CA1094247"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='btnSearch']"<br /><br/>
+Clicked successfully on WebElement: "//input[@id='btnSearch']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<b style='color:blue'>Verify search popup title text contains 'CA1094247'</b><br /><br/>
+<span style='color:green'><b>Expected:</b><br />true<br /><b>Actual:</b><br />true<br /></span><br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[contains(@class,'orderstatuscomments')]//button[@type='button'][span[text()='Display Orders']]/span"<br /><br/>
+Clicked successfully on WebElement: "//div[contains(@class,'orderstatuscomments')]//button[@type='button'][span[text()='Display Orders']]/span"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchExpandCollapse'][text()='Expand All']"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchExpandCollapse'][text()='Expand All']"<br /><br/>
+Clicked successfully on WebElement: "//a[@id='anchExpandCollapse'][text()='Expand All']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchExpandCollapse'][text()='Collapse All']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+<span style='color:blue'><b>Updated count of locations : 15</b></span><br /><br/>
+<b style='color:blue'>Verifying that the new count of locations is 1 more than the old count</b><br /><br/>
+<span style='color:green'><b>Expected:</b><br />15<br /><b>Actual:</b><br />15<br /></span><br /><br/>
+</div>
+</td>
+<td></td>
+<td>114</td>
+<td>autoFW.TESTS.Compex_tests@2a7f1f10</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.AddComment_SingleOrderLocation()'><b>AddComment_SingleOrderLocation</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-134136660" onClick='toggleBox("Output-134136660", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-134136660" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-134136660">
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchExpandCollapse'][text()='Expand All']"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchExpandCollapse'][text()='Expand All']"<br /><br/>
+Clicked successfully on WebElement: "//a[@id='anchExpandCollapse'][text()='Expand All']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchExpandCollapse'][text()='Collapse All']"<br /><br/>
+Waited successfully for element with xpath: "//input[starts-with(@name,'chkChild_')]"<br /><br/>
+<span style='color:blue'><b>Accessing order --> location : CA1094395 --> 001</b></span><br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//input[starts-with(@name,'chkChild_')]"<br /><br/>
+Clicked successfully on WebElement: "//input[starts-with(@name,'chkChild_')]"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//li[@id='addCommentOrderLI']"<br /><br/>
+Clicked successfully on WebElement: "//li[@id='addCommentOrderLI']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//div[@class='notesContainer']/textarea"<br /><br/>
+Typed successfully into WebElement: "//div[@class='notesContainer']/textarea", content: "Automation comment on 20230127101941"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[@class='notesContainer']/following::button"<br /><br/>
+Clicked successfully on WebElement: "//div[@class='notesContainer']/following::button"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waited successfully for element with xpath: "//div[@class='successResult']"<br /><br/>
+<b style='color:blue'>Verifying success message "Comments added successfully" after adding comment</b><br /><br/>
+<span style='color:green'><b>Expected:</b><br />true<br /><b>Actual:</b><br />true<br /></span><br /><br/>
+Waited successfully for element with xpath: "//table[@id='status_note_table']//span[@id='status_comment']"<br /><br/>
+<b style='color:blue'>Verifying comment "[Super Admin] Automation comment on 20230127101941" is present in table</b><br /><br/>
+<span style='color:green'><b>Expected:</b><br />true<br /><b>Actual:</b><br />true<br /></span><br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[@class='closePopUp']/a"<br /><br/>
+Clicked successfully on WebElement: "//div[@class='closePopUp']/a"<br /><br/>
+</div>
+</td>
+<td></td>
+<td>52</td>
+<td>autoFW.TESTS.Compex_tests@2a7f1f10</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.VerifyLoginAsClientManager()'><b>VerifyLoginAsClientManager</b><br>Test class: autoFW.TESTS.Compex_tests<br>Parameters: https://www.cpxlegaltest.com/, arjoshi, Compex@2017<br/>
+<a href="#Output-1986001684" onClick='toggleBox("Output-1986001684", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1986001684" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1986001684">
+Logging in at url: https://www.cpxlegaltest.com/<br/ >User: arjoshi<br/ >Pwd: Compex@2017<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[(text()='Login') and (contains(@class, 'subnav-button'))]"<br /><br/>
+Clicked successfully on WebElement: "//a[(text()='Login') and (contains(@class, 'subnav-button'))]"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='username']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='username']", content: "arjoshi"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='password']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='password']", content: "Compex@2017"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//button[@id='loginform1-btlogin']"<br /><br/>
+Clicked successfully on WebElement: "//button[@id='loginform1-btlogin']"<br /><br/>
+Waiting for smallLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@class='loading-overlay-wrapper']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='loading-overlay-wrapper'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for smallLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@class='loading-overlay-wrapper']" was already invisible.<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waited successfully for element with xpath: "//a[text()='Logout']"<br /><br/>
+Logged in successfully.<br /><br/>
+Waited successfully for element with xpath: "//span[@id='ddcl-searchActType1']"<br /><br/>
+<b style='color:blue'>Default selection in first dropdown should be 'My Account,All Contacts'</b><br /><br/>
+<span style='color:green'><b>Expected:</b><br />My Account,All Contacts<br /><b>Actual:</b><br />My Account,All Contacts<br /></span><br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with outerHTML: <span class="ui-dropdownchecklist ui-dropdownchecklist-selector-wrapper ui-widget" id="ddcl-searchActType1" style="display: inline-block; cursor: default; overflow: hidden;"><span class="ui-dropdownchecklist-selector ui-state-default" tabindex="0" style="display: inline-block; overflow: hidden; white-space: nowrap; width: 112px;"><span class="ui-dropdownchecklist-text" title="My Account,All Contacts" style="display: inline-block; white-space: nowrap; overflow: hidden; width: 108px;">My Account,All Contacts</span></span></span><br /><br/>
+Clicked successfully on WebElement: <span class="ui-dropdownchecklist ui-dropdownchecklist-selector-wrapper ui-widget" id="ddcl-searchActType1" style="display: inline-block; cursor: default; overflow: hidden;"><span class="ui-dropdownchecklist-selector ui-state-default ui-state-active" tabindex="0" style="display: inline-block; overflow: hidden; white-space: nowrap; width: 112px;"><span class="ui-dropdownchecklist-text" title="My Account,All Contacts" style="display: inline-block; white-space: nowrap; overflow: hidden; width: 108px;">My Account,All Contacts</span></span></span><br /><br/>
+Moving mouse a bit..<br /><br/>
+Mouse moved successfully<br /><br/>
+Waited successfully for element with xpath: "//div[@id='ddcl-searchActType1-ddw']"<br /><br/>
+<b style='color:blue'>Verifying all options in first dropdown</b><br /><br/>
+<span style='color:green'><b>Expected:</b><br />My Account
+All Contacts<br /><b>Actual:</b><br />My Account
+All Contacts<br /></span><br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with outerHTML: <span class="ui-dropdownchecklist ui-dropdownchecklist-selector-wrapper ui-widget" id="ddcl-searchActType1" style="display: inline-block; cursor: default; overflow: hidden;"><span class="ui-dropdownchecklist-selector ui-state-default ui-state-active" tabindex="0" style="display: inline-block; overflow: hidden; white-space: nowrap; width: 112px;"><span class="ui-dropdownchecklist-text" title="My Account,All Contacts" style="display: inline-block; white-space: nowrap; overflow: hidden; width: 108px;">My Account,All Contacts</span></span></span><br /><br/>
+Clicked successfully on WebElement: <span class="ui-dropdownchecklist ui-dropdownchecklist-selector-wrapper ui-widget" id="ddcl-searchActType1" style="display: inline-block; cursor: default; overflow: hidden;"><span class="ui-dropdownchecklist-selector ui-state-default" tabindex="0" style="display: inline-block; overflow: hidden; white-space: nowrap; width: 112px;"><span class="ui-dropdownchecklist-text" title="My Account,All Contacts" style="display: inline-block; white-space: nowrap; overflow: hidden; width: 108px;">My Account,All Contacts</span></span></span><br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[text()='Logout']"<br /><br/>
+Clicked successfully on WebElement: "//a[text()='Logout']"<br /><br/>
+Waited successfully for element with xpath: "//a[(text()='Login') and (contains(@class, 'subnav-button'))]"<br /><br/>
+Logged out successfully.<br /><br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>autoFW.TESTS.Compex_tests@2a7f1f10</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.VerifyLoginAsSuperUser()'><b>VerifyLoginAsSuperUser</b><br>Test class: autoFW.TESTS.Compex_tests<br>Parameters: https://www.cpxlegaltest.com/, SuperUser, Compex@2017<br/>
+<a href="#Output-1808470758" onClick='toggleBox("Output-1808470758", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1808470758" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1808470758">
+Logging in at url: https://www.cpxlegaltest.com/<br/ >User: SuperUser<br/ >Pwd: Compex@2017<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[(text()='Login') and (contains(@class, 'subnav-button'))]"<br /><br/>
+Clicked successfully on WebElement: "//a[(text()='Login') and (contains(@class, 'subnav-button'))]"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='username']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='username']", content: "SuperUser"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='password']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='password']", content: "Compex@2017"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//button[@id='loginform1-btlogin']"<br /><br/>
+Clicked successfully on WebElement: "//button[@id='loginform1-btlogin']"<br /><br/>
+Waiting for smallLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@class='loading-overlay-wrapper']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='loading-overlay-wrapper'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for smallLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@class='loading-overlay-wrapper']" was already invisible.<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waited successfully for element with xpath: "//a[text()='Logout']"<br /><br/>
+Logged in successfully.<br /><br/>
+Waited successfully for element with xpath: "//span[@id='ddcl-searchActType1']"<br /><br/>
+<b style='color:blue'>Default selection in first dropdown should be 'All Clients'</b><br /><br/>
+<span style='color:green'><b>Expected:</b><br />All Clients<br /><b>Actual:</b><br />All Clients<br /></span><br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with outerHTML: <span class="ui-dropdownchecklist ui-dropdownchecklist-selector-wrapper ui-widget" id="ddcl-searchActType1" style="display: inline-block; cursor: default; overflow: hidden;"><span class="ui-dropdownchecklist-selector ui-state-default" tabindex="0" style="display: inline-block; overflow: hidden; white-space: nowrap; width: 112px;"><span class="ui-dropdownchecklist-text" title="All Clients" style="display: inline-block; white-space: nowrap; overflow: hidden; width: 108px;">All Clients</span></span></span><br /><br/>
+Clicked successfully on WebElement: <span class="ui-dropdownchecklist ui-dropdownchecklist-selector-wrapper ui-widget" id="ddcl-searchActType1" style="display: inline-block; cursor: default; overflow: hidden;"><span class="ui-dropdownchecklist-selector ui-state-default ui-state-active" tabindex="0" style="display: inline-block; overflow: hidden; white-space: nowrap; width: 112px;"><span class="ui-dropdownchecklist-text" title="All Clients" style="display: inline-block; white-space: nowrap; overflow: hidden; width: 108px;">All Clients</span></span></span><br /><br/>
+Moving mouse a bit..<br /><br/>
+Mouse moved successfully<br /><br/>
+Waited successfully for element with xpath: "//div[@id='ddcl-searchActType1-ddw']"<br /><br/>
+<b style='color:blue'>Verifying all options in first dropdown</b><br /><br/>
+<span style='color:green'><b>Expected:</b><br />My Account
+All Contacts
+All Clients<br /><b>Actual:</b><br />My Account
+All Contacts
+All Clients<br /></span><br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with outerHTML: <span class="ui-dropdownchecklist ui-dropdownchecklist-selector-wrapper ui-widget" id="ddcl-searchActType1" style="display: inline-block; cursor: default; overflow: hidden;"><span class="ui-dropdownchecklist-selector ui-state-default ui-state-active" tabindex="0" style="display: inline-block; overflow: hidden; white-space: nowrap; width: 112px;"><span class="ui-dropdownchecklist-text" title="All Clients" style="display: inline-block; white-space: nowrap; overflow: hidden; width: 108px;">All Clients</span></span></span><br /><br/>
+Clicked successfully on WebElement: <span class="ui-dropdownchecklist ui-dropdownchecklist-selector-wrapper ui-widget" id="ddcl-searchActType1" style="display: inline-block; cursor: default; overflow: hidden;"><span class="ui-dropdownchecklist-selector ui-state-default" tabindex="0" style="display: inline-block; overflow: hidden; white-space: nowrap; width: 112px;"><span class="ui-dropdownchecklist-text" title="All Clients" style="display: inline-block; white-space: nowrap; overflow: hidden; width: 108px;">All Clients</span></span></span><br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[text()='Logout']"<br /><br/>
+Clicked successfully on WebElement: "//a[text()='Logout']"<br /><br/>
+Waited successfully for element with xpath: "//a[(text()='Login') and (contains(@class, 'subnav-button'))]"<br /><br/>
+Logged out successfully.<br /><br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>autoFW.TESTS.Compex_tests@2a7f1f10</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.VerifyLoginAsClientContact()'><b>VerifyLoginAsClientContact</b><br>Test class: autoFW.TESTS.Compex_tests<br>Parameters: https://www.cpxlegaltest.com/, teresam, Compex@2017<br/>
+<a href="#Output-1187225933" onClick='toggleBox("Output-1187225933", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1187225933" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1187225933">
+Logging in at url: https://www.cpxlegaltest.com/<br/ >User: teresam<br/ >Pwd: Compex@2017<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[(text()='Login') and (contains(@class, 'subnav-button'))]"<br /><br/>
+Clicked successfully on WebElement: "//a[(text()='Login') and (contains(@class, 'subnav-button'))]"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='username']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='username']", content: "teresam"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='password']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='password']", content: "Compex@2017"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//button[@id='loginform1-btlogin']"<br /><br/>
+Clicked successfully on WebElement: "//button[@id='loginform1-btlogin']"<br /><br/>
+Waiting for smallLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@class='loading-overlay-wrapper']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='loading-overlay-wrapper'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for smallLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@class='loading-overlay-wrapper']" was already invisible.<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Waited successfully for element with xpath: "//a[text()='Logout']"<br /><br/>
+Logged in successfully.<br /><br/>
+Waited successfully for element with xpath: "//span[@id='ddcl-searchActType1']//span[text()='My Account']"<br /><br/>
+<b style='color:blue'>Dropdown 'My Account' should exist</b><br /><br/>
+<span style='color:green'><b>Expected:</b><br />true<br /><b>Actual:</b><br />true<br /></span><br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[text()='Logout']"<br /><br/>
+Clicked successfully on WebElement: "//a[text()='Logout']"<br /><br/>
+Waited successfully for element with xpath: "//a[(text()='Login') and (contains(@class, 'subnav-button'))]"<br /><br/>
+Logged out successfully.<br /><br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>autoFW.TESTS.Compex_tests@2a7f1f10</td></tr>
+<tr>
+<td title='autoFW.TESTS.Setup.Init()'><b>Init</b><br>Test class: autoFW.TESTS.Setup</td>
+<td></td>
+<td>7</td>
+<td>autoFW.TESTS.Setup@29215f06</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.UploadDocument_SingleOrder()'><b>UploadDocument_SingleOrder</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-414903944" onClick='toggleBox("Output-414903944", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-414903944" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-414903944">
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchExpandCollapse'][text()='Expand All']"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchExpandCollapse'][text()='Expand All']"<br /><br/>
+Clicked successfully on WebElement: "//a[@id='anchExpandCollapse'][text()='Expand All']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchExpandCollapse'][text()='Collapse All']"<br /><br/>
+<span style='color:blue'><b>Accessing order --> location : CA1094395 --> 042</b></span><br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//input[@name='chkChild_CA1094395-042']"<br /><br/>
+Clicked successfully on WebElement: "//input[@name='chkChild_CA1094395-042']"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//li[contains(@id,'uploadDocumentLI')]"<br /><br/>
+Clicked successfully on WebElement: "//li[contains(@id,'uploadDocumentLI')]"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waited successfully for element with xpath: "//button[@class='ff_fileupload_dropzone']"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with outerHTML: <button class="ff_fileupload_dropzone" type="button" aria-label="Browse, drag-and-drop, or paste files to upload"></button><br /><br/>
+Clicked successfully on WebElement: <button class="ff_fileupload_dropzone" type="button" aria-label="Browse, drag-and-drop, or paste files to upload"></button><br /><br/>
+Typing via Robot: C:\Users\raghuwansh.shisode\Desktop\Compex Automation\Compex Automation File and code\compex 19.12.22\compex\src\test\resources\Uploads\automationUpload.png<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//button[text()='Upload']"<br /><br/>
+Clicked successfully on WebElement: "//button[text()='Upload']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<b style='color:blue'>Verifying success message after file upload</b><br /><br/>
+<span style='color:green'><b>Expected:</b><br />Files ready To Submit<br /><b>Actual:</b><br />Files ready To Submit<br /></span><br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//button[@id='btnSubmitUpload']"<br /><br/>
+Clicked successfully on WebElement: "//button[@id='btnSubmitUpload']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<b style='color:blue'>Verifying success message after file upload</b><br /><br/>
+<span style='color:green'><b>Expected:</b><br />Files submited successfully !!<br /><b>Actual:</b><br />Files submited successfully !!<br /></span><br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//button[@id='popup_ok']"<br /><br/>
+Clicked successfully on WebElement: "//button[@id='popup_ok']"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchrest']"<br /><br/>
+Clicked successfully on WebElement: "//a[@id='anchrest']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Clicked successfully on WebElement: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Moving mouse a bit..<br /><br/>
+Mouse moved successfully<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//li[text()='Order#']"<br /><br/>
+Clicked successfully on WebElement: "//li[text()='Order#']"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='txtSearchCriteria']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='txtSearchCriteria']", content: "CA1094395"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='btnSearch']"<br /><br/>
+Clicked successfully on WebElement: "//input[@id='btnSearch']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<b style='color:blue'>Verify search popup title text contains 'CA1094395'</b><br /><br/>
+<span style='color:green'><b>Expected:</b><br />true<br /><b>Actual:</b><br />true<br /></span><br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[contains(@class,'orderstatuscomments')]//button[@type='button'][span[text()='Display Orders']]/span"<br /><br/>
+Clicked successfully on WebElement: "//div[contains(@class,'orderstatuscomments')]//button[@type='button'][span[text()='Display Orders']]/span"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchExpandCollapse'][text()='Expand All']"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchExpandCollapse'][text()='Expand All']"<br /><br/>
+Clicked successfully on WebElement: "//a[@id='anchExpandCollapse'][text()='Expand All']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchExpandCollapse'][text()='Collapse All']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Waited successfully for element with xpath: "//div[@id='docuimgdiv-CA1094395-042'][.//li[@class='docAttachment']]"<br /><br/>
+<b style='color:blue'>Verifying that file icon is present in the table row now</b><br /><br/>
+<span style='color:green'><b>Expected:</b><br />true<br /><b>Actual:</b><br />true<br /></span><br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//button[@id='btnSearchCriteria'][@value='RESET']"<br /><br/>
+Clicked successfully on WebElement: "//button[@id='btnSearchCriteria'][@value='RESET']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+</div>
+</td>
+<td></td>
+<td>93</td>
+<td>autoFW.TESTS.Compex_tests@2a7f1f10</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.Logout()'><b>Logout</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-1009307034" onClick='toggleBox("Output-1009307034", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1009307034" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1009307034">
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[text()='Logout']"<br /><br/>
+Clicked successfully on WebElement: "//a[text()='Logout']"<br /><br/>
+Waited successfully for element with xpath: "//a[(text()='Login') and (contains(@class, 'subnav-button'))]"<br /><br/>
+Logged out successfully.<br /><br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>autoFW.TESTS.Compex_tests@2a7f1f10</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.VerifyLoginAsCustodian()'><b>VerifyLoginAsCustodian</b><br>Test class: autoFW.TESTS.Compex_tests<br>Parameters: https://www.cpxlegaltest.com/, TestCusto123, Compex@2017<br/>
+<a href="#Output-1913113425" onClick='toggleBox("Output-1913113425", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1913113425" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1913113425">
+Logging in at url: https://www.cpxlegaltest.com/<br/ >Custodian User: TestCusto123<br/ >Pwd: Compex@2017<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[(text()='Login') and (contains(@class, 'subnav-button'))]"<br /><br/>
+Clicked successfully on WebElement: "//a[(text()='Login') and (contains(@class, 'subnav-button'))]"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='username']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='username']", content: "TestCusto123"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='password']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='password']", content: "Compex@2017"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//button[@id='loginform1-btlogin']"<br /><br/>
+Clicked successfully on WebElement: "//button[@id='loginform1-btlogin']"<br /><br/>
+Waiting for smallLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@class='loading-overlay-wrapper']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='loading-overlay-wrapper'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for smallLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@class='loading-overlay-wrapper']" was already invisible.<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Waited successfully for element with xpath: "//a[text()='Logout']"<br /><br/>
+Logged in successfully.<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[text()='Logout']"<br /><br/>
+Clicked successfully on WebElement: "//a[text()='Logout']"<br /><br/>
+Waited successfully for element with xpath: "//a[(text()='Login') and (contains(@class, 'subnav-button'))]"<br /><br/>
+Logged out successfully.<br /><br/>
+</div>
+</td>
+<td></td>
+<td>111</td>
+<td>autoFW.TESTS.Compex_tests@2a7f1f10</td></tr>
+<tr>
+<td title='autoFW.TESTS.Cleanup.CleanupTest()'><b>CleanupTest</b><br>Test class: autoFW.TESTS.Cleanup</td>
+<td></td>
+<td>1</td>
+<td>autoFW.TESTS.Cleanup@46cdf8bd</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.SearchByOrderNum1()'><b>SearchByOrderNum1</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-627707285" onClick='toggleBox("Output-627707285", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-627707285" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-627707285">
+Searching for order: CA1094395<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Clicked successfully on WebElement: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Moving mouse a bit..<br /><br/>
+Mouse moved successfully<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//li[text()='Order#']"<br /><br/>
+Clicked successfully on WebElement: "//li[text()='Order#']"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='txtSearchCriteria']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='txtSearchCriteria']", content: "CA1094395"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='btnSearch']"<br /><br/>
+Clicked successfully on WebElement: "//input[@id='btnSearch']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<b style='color:blue'>Verify search popup title text contains 'CA1094395'</b><br /><br/>
+<span style='color:green'><b>Expected:</b><br />true<br /><b>Actual:</b><br />true<br /></span><br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[contains(@class,'orderstatuscomments')]//button[@type='button'][span[text()='Display Orders']]/span"<br /><br/>
+Clicked successfully on WebElement: "//div[contains(@class,'orderstatuscomments')]//button[@type='button'][span[text()='Display Orders']]/span"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchExpandCollapse'][text()='Expand All']"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchExpandCollapse'][text()='Expand All']"<br /><br/>
+Clicked successfully on WebElement: "//a[@id='anchExpandCollapse'][text()='Expand All']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waited successfully for element with xpath: "//a[@id='anchExpandCollapse'][text()='Collapse All']"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//td[(@class='orderNumCol')][span[text()='CA1094395']]//following::a[@class='ViewOrder'][text()='005']"<br /><br/>
+Clicked successfully on WebElement: "//td[(@class='orderNumCol')][span[text()='CA1094395']]//following::a[@class='ViewOrder'][text()='005']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waited successfully for element with xpath: "//*[@id="TabHeader-2"]/a"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//*[@id="TabHeader-2"]/a"<br /><br/>
+Clicked successfully on WebElement: "//*[@id="TabHeader-2"]/a"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.203.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RAGHUW~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49315/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3698a58abff443ea89a8a936d78a2c46</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Waited successfully for element with xpath: "//button[@id='printButtonOI']"<br /><br/>
+<b style='color:blue'>Verify 'Order Info' pop-up is present in order info pop-up</b><br /><br/>
+<span style='color:green'><b>Expected:</b><br />true<br /><b>Actual:</b><br />true<br /></span><br /><br/>
+<span style='color:blue'><b>Attorney's name: Michael Spongeberg (123)</b></span><br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[@id='btnParentmodalDlg']"<br /><br/>
+Clicked successfully on WebElement: "//a[@id='btnParentmodalDlg']"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//button[@id='btnSearchCriteria'][@value='RESET']"<br /><br/>
+Clicked successfully on WebElement: "//button[@id='btnSearchCriteria'][@value='RESET']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+</div>
+</td>
+<td></td>
+<td>60</td>
+<td>autoFW.TESTS.Compex_tests@2a7f1f10</td></tr>
+</table><p>
+</body>
+</html>

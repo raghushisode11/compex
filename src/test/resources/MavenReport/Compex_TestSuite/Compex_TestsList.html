@@ -1,0 +1,280 @@
+<html>
+<head>
+<title>TestNG:  Compex_TestsList</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Compex_TestsList</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Dec 10 10:16:13 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>57 seconds (57915 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='autoFW.TESTS.Setup.Init()'><b>Init</b><br>Test class: autoFW.TESTS.Setup</td>
+<td></td>
+<td>1</td>
+<td>autoFW.TESTS.Setup@1e04fa0a</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.Logout()'><b>Logout</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-1747025217" onClick='toggleBox("Output-1747025217", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1747025217" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1747025217">
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[text()='Logout']"<br /><br/>
+Clicked successfully on WebElement: "//a[text()='Logout']"<br /><br/>
+Waited successfully for element with xpath: "//a[(text()='Login') and (contains(@class, 'subnav-button'))]"<br /><br/>
+Logged out successfully.<br /><br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>autoFW.TESTS.Compex_tests@201a4587</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.DemoSearchOrder()'><b>DemoSearchOrder</b><br>Test class: autoFW.TESTS.Compex_tests<br/>
+<a href="#Output-1906335777" onClick='toggleBox("Output-1906335777", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1906335777" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1906335777">
+Searching for order: CA1003786<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-7IL72ML', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51731/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 77b8fdccf5d145bd280bf43300d320eb</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Clicked successfully on WebElement: "//div[(contains(@class,'t-dropdown')) and (@text='Search My Orders')]"<br /><br/>
+Moving mouse a bit..<br /><br/>
+Mouse moved successfully<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//li[@title='Order#']"<br /><br/>
+Clicked successfully on WebElement: "//li[@title='Order#']"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='txtSearchCriteria']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='txtSearchCriteria']", content: "CA1003786"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='btnSearch']"<br /><br/>
+Clicked successfully on WebElement: "//input[@id='btnSearch']"<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waited successfully for element with xpath: "//*[@id='PopupTitle']"<br /><br/>
+Waited successfully for element with xpath: "//*[@id='PopupTitle']"<br /><br/>
+searched popup title text: SEARCH RESULT - ORDERS ACROSS CLIENTS [ Search Text - CA1003786 ]<br /><br/>
+<span style='color:green'>Assertion passed: search popup contains 'CA1003786'</span><br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//div[contains(@class,'orderstatuscomments')]//button[@type='button'][span[text()='Display Orders']]/span"<br /><br/>
+Clicked successfully on WebElement: "//div[contains(@class,'orderstatuscomments')]//button[@type='button'][span[text()='Display Orders']]/span"<br /><br/>
+Waited successfully for element with xpath: "//*[@id='lblSearchCriteria']"<br /><br/>
+Waited successfully for element with xpath: "//*[@id='lblSearchCriteria']"<br /><br/>
+searched reset title text: Search results of "My Account & All Contacts" for "Order#" with "CA1003786"<br /><br/>
+<span style='color:green'>Assertion passed: search reset title contains "CA1003786"</span><br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//td[@class='orderNumCol'][span[(@class='triggerTip') and (text()='CA1003786')]]/span[text()='CA1003786']"<br /><br/>
+Clicked successfully on WebElement: "//td[@class='orderNumCol'][span[(@class='triggerTip') and (text()='CA1003786')]]/span[text()='CA1003786']"<br /><br/>
+Fetching colIndex of 'RECORD LOCATION' from '//table[@class='tbl_tooltipGrid']//tr/th'<br /><br/>
+Waited successfully for element with xpath: "//table[@class='tbl_tooltipGrid']//tr/th"<br /><br/>
+Fetched colIndex: 3<br /><br/>
+Fetching tableCellValue in row 1 & column 3 with xpath '//div[@class='recContent']//table[@class='tbl_tooltipGrid']//tr'<br /><br/>
+Waited successfully for element with xpath: "//div[@class='recContent']//table[@class='tbl_tooltipGrid']//tr"<br /><br/>
+Fetched tableCellValue from row 1 & column 3 is: HENRY FORD HEALTH CENTER<br /><br/>
+Fetching tableCellValue in row 3 & column 3 with xpath '//div[@class='recContent']//table[@class='tbl_tooltipGrid']//tr'<br /><br/>
+Waited successfully for element with xpath: "//div[@class='recContent']//table[@class='tbl_tooltipGrid']//tr"<br /><br/>
+Fetched tableCellValue from row 3 & column 3 is: PEKIN HOSPITAL FOUNDATION (BILLING)<br /><br/>
+Fetching tableCellValue in row 4 & column 3 with xpath '//div[@class='recContent']//table[@class='tbl_tooltipGrid']//tr'<br /><br/>
+Waited successfully for element with xpath: "//div[@class='recContent']//table[@class='tbl_tooltipGrid']//tr"<br /><br/>
+Fetched tableCellValue from row 4 & column 3 is: KAISER BILLING SPECIAL REC UNIT- 3RD PARTY LIABILITY, CENTRAL BUS.<br /><br/>
+<span style='color:green'>Fetching from Excel:</span><br /><br/>
+Compex<br /><br/>
+Admin<br /><br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>autoFW.TESTS.Compex_tests@201a4587</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.LoginAsClientContact()'><b>LoginAsClientContact</b><br>Test class: autoFW.TESTS.Compex_tests<br>Parameters: https://www.cpxlegaltest.com/, tersam, Compex72!<br/>
+<a href="#Output-453007883" onClick='toggleBox("Output-453007883", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-453007883" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-453007883">
+Logging in at url: https://www.cpxlegaltest.com/<br/ >User: tersam<br/ >Pwd: Compex72!<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[(text()='Login') and (contains(@class, 'subnav-button'))]"<br /><br/>
+Clicked successfully on WebElement: "//a[(text()='Login') and (contains(@class, 'subnav-button'))]"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='username']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='username']", content: "tersam"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='password']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='password']", content: "Compex72!"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//button[@id='loginform1-btlogin']"<br /><br/>
+Clicked successfully on WebElement: "//button[@id='loginform1-btlogin']"<br /><br/>
+Waiting for smallLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@class='loading-overlay-wrapper']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='loading-overlay-wrapper'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-7IL72ML', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51731/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 77b8fdccf5d145bd280bf43300d320eb</div><br /><br /><br/>
+Waiting for smallLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@class='loading-overlay-wrapper']" was already invisible.<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='ajaxBusy'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-7IL72ML', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51731/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 77b8fdccf5d145bd280bf43300d320eb</div><br /><br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@id='ajaxBusy']" was already invisible.<br /><br/>
+Waited successfully for element with xpath: "//a[text()='Logout']"<br /><br/>
+Logged in successfully.<br/>
+Waited successfully for element with xpath: "//span[@id='ddcl-searchActType1']//span[text()='My Account']"<br /><br/>
+<b style='color:blue'>Dropdown 'My Account' should exist</b><br /><br/>
+<span style='color:green'><b>Expected:</b><br />true<br /><b>Actual:</b><br />true<br /></span><br /><br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>autoFW.TESTS.Compex_tests@201a4587</td></tr>
+<tr>
+<td title='autoFW.TESTS.Compex_tests.LoginAsSuperUser()'><b>LoginAsSuperUser</b><br>Test class: autoFW.TESTS.Compex_tests<br>Parameters: https://www.cpxlegaltest.com/, SuperUser, Compex@2017<br/>
+<a href="#Output-555740147" onClick='toggleBox("Output-555740147", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-555740147" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-555740147">
+Logging in at url: https://www.cpxlegaltest.com/<br/ >User: SuperUser<br/ >Pwd: Compex@2017<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//a[(text()='Login') and (contains(@class, 'subnav-button'))]"<br /><br/>
+Clicked successfully on WebElement: "//a[(text()='Login') and (contains(@class, 'subnav-button'))]"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='username']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='username']", content: "SuperUser"<br /><br/>
+Attempting to type..<br /><br/>
+Waited successfully for element with xpath: "//input[@id='password']"<br /><br/>
+Typed successfully into WebElement: "//input[@id='password']", content: "Compex@2017"<br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with xpath: "//button[@id='loginform1-btlogin']"<br /><br/>
+Clicked successfully on WebElement: "//button[@id='loginform1-btlogin']"<br /><br/>
+Waiting for smallLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@class='loading-overlay-wrapper']"<br /><br/>
+<div style='color:orange'><b>WARNING:</b><br />Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='loading-overlay-wrapper'] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-7IL72ML', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51731/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 77b8fdccf5d145bd280bf43300d320eb</div><br /><br /><br/>
+Waiting for smallLoader to disappear<br /><br/>
+waitUntilElementNotVisible: Element with xpath "//div[@class='loading-overlay-wrapper']" was already invisible.<br /><br/>
+Waiting for bigLoader to appear<br /><br/>
+waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waiting for bigLoader to disappear<br /><br/>
+waitUntilElementNotVisible: For element with xpath "//div[@id='ajaxBusy']"<br /><br/>
+Waited successfully for element with xpath: "//a[text()='Logout']"<br /><br/>
+Logged in successfully.<br/>
+Waited successfully for element with xpath: "//span[@id='ddcl-searchActType1']"<br /><br/>
+<b style='color:blue'>Default selection in first dropdown should be 'All Clients'</b><br /><br/>
+<span style='color:green'><b>Expected:</b><br />All Clients<br /><b>Actual:</b><br />All Clients<br /></span><br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with outerHTML: <span class="ui-dropdownchecklist ui-dropdownchecklist-selector-wrapper ui-widget" id="ddcl-searchActType1" style="display: inline-block; cursor: default; overflow: hidden;"><span class="ui-dropdownchecklist-selector ui-state-default" tabindex="0" style="display: inline-block; overflow: hidden; white-space: nowrap; width: 112px;"><span class="ui-dropdownchecklist-text" title="All Clients" style="display: inline-block; white-space: nowrap; overflow: hidden; width: 108px;">All Clients</span></span></span><br /><br/>
+Clicked successfully on WebElement: <span class="ui-dropdownchecklist ui-dropdownchecklist-selector-wrapper ui-widget" id="ddcl-searchActType1" style="display: inline-block; cursor: default; overflow: hidden;"><span class="ui-dropdownchecklist-selector ui-state-default ui-state-active" tabindex="0" style="display: inline-block; overflow: hidden; white-space: nowrap; width: 112px;"><span class="ui-dropdownchecklist-text" title="All Clients" style="display: inline-block; white-space: nowrap; overflow: hidden; width: 108px;">All Clients</span></span></span><br /><br/>
+Moving mouse a bit..<br /><br/>
+Mouse moved successfully<br /><br/>
+Waited successfully for element with xpath: "//div[@id='ddcl-searchActType1-ddw']"<br /><br/>
+<b style='color:blue'>Verifying all options in first dropdown</b><br /><br/>
+<span style='color:green'><b>Expected:</b><br />My Account
+All Contacts
+All Clients<br /><b>Actual:</b><br />My Account
+All Contacts
+All Clients<br /></span><br /><br/>
+Attempting to click..<br /><br/>
+Waited successfully for element with outerHTML: <span class="ui-dropdownchecklist ui-dropdownchecklist-selector-wrapper ui-widget" id="ddcl-searchActType1" style="display: inline-block; cursor: default; overflow: hidden;"><span class="ui-dropdownchecklist-selector ui-state-default ui-state-active" tabindex="0" style="display: inline-block; overflow: hidden; white-space: nowrap; width: 112px;"><span class="ui-dropdownchecklist-text" title="All Clients" style="display: inline-block; white-space: nowrap; overflow: hidden; width: 108px;">All Clients</span></span></span><br /><br/>
+Clicked successfully on WebElement: <span class="ui-dropdownchecklist ui-dropdownchecklist-selector-wrapper ui-widget" id="ddcl-searchActType1" style="display: inline-block; cursor: default; overflow: hidden;"><span class="ui-dropdownchecklist-selector ui-state-default" tabindex="0" style="display: inline-block; overflow: hidden; white-space: nowrap; width: 112px;"><span class="ui-dropdownchecklist-text" title="All Clients" style="display: inline-block; white-space: nowrap; overflow: hidden; width: 108px;">All Clients</span></span></span><br /><br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>autoFW.TESTS.Compex_tests@201a4587</td></tr>
+</table><p>
+</body>
+</html>

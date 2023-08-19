@@ -1,0 +1,4 @@
+# Created at 2022-12-06T14:42:55.243
+Boot Manifest-JAR contains absolute paths in classpath 'D:\ITCube\Test Automation\compex\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

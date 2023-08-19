@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Compex_TestSuite]">
+  <parameter name="SuperUsername" value="SuperUser"/>
+  <parameter name="CustodianPwd" value="Compex@2017"/>
+  <parameter name="CustodianUsername" value="TestCusto123"/>
+  <parameter name="ClientContactUsername" value="teresam"/>
+  <parameter name="ClientManagerUsername" value="arjoshi"/>
+  <parameter name="ClientManagerPwd" value="Compex@2017"/>
+  <parameter name="ClientContactPwd" value="Compex@2017"/>
+  <parameter name="AUTurl" value="https://www.cpxlegaltest.com/"/>
+  <parameter name="SuperPwd" value="Compex@2017"/>
+  <test thread-count="5" name="Compex_TestsList01(failed)">
+    <classes>
+      <class name="autoFW.TESTS.Compex_tests">
+        <methods>
+          <include name="SearchByFilm"/>
+          <include name="SearchByadjuster"/>
+          <include name="testSetup"/>
+          <include name="SearchByattorney"/>
+          <include name="SearchByClaimNum"/>
+          <include name="SearchBycaseNum"/>
+          <include name="SearchByPlaintiff"/>
+          <include name="SearchBydefendant"/>
+        </methods>
+      </class> <!-- autoFW.TESTS.Compex_tests -->
+    </classes>
+  </test> <!-- Compex_TestsList01(failed) -->
+</suite> <!-- Failed suite [Compex_TestSuite] -->

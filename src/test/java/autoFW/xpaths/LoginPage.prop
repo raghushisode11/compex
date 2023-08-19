@@ -1,0 +1,6 @@
+btn_login = //a[(text()='Login') and (contains(@class, 'subnav-button'))]
+input_username = //input[@id='username']
+input_pwd = //input[@id='password']
+btn_continue = //button[@id='loginform1-btlogin']
+btn_custodian = //div[@class='dropdown'][a[text()='Custodians']]
+a_custodian_login = //div[@class='subnav_dropdown'][ul[li[a[text()='Login']]]]//a[text()='Login']

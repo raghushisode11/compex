@@ -1,0 +1,90 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 20, Errors: 0, Skipped: 0, Time elapsed: 22.715 s <<< FAILURE! - in TestSuite
+autoFW.TESTS.Setup.Init  Time elapsed: 8.391 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 108
+Current browser version is 116.0.5845.96 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-Q1UB2OV', ip: '192.168.30.84', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], prefs: {download.default_directory: C:\Users\raghuwansh.shisode...}}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], prefs: {download.default_directory: C:\Users\raghuwansh.shisode...}}}}]
+	at autoFW.TESTS.Setup.Init(Setup.java:36)
+
+autoFW.TESTS.Compex_tests.VerifyLoginAsCustodian[https://www.cpxlegaltest.com/, TestCusto123, Compex@2017](1)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at autoFW.TESTS.Compex_tests.VerifyLoginAsCustodian(Compex_tests.java:47)
+
+autoFW.TESTS.Compex_tests.VerifyLoginAsClientContact[https://www.cpxlegaltest.com/, teresam, Compex@2017](1)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at autoFW.TESTS.Compex_tests.VerifyLoginAsClientContact(Compex_tests.java:122)
+
+autoFW.TESTS.Compex_tests.VerifyLoginAsClientManager[https://www.cpxlegaltest.com/, arjoshi, Compex@2017](1)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException
+	at autoFW.TESTS.Compex_tests.VerifyLoginAsClientManager(Compex_tests.java:94)
+
+autoFW.TESTS.Compex_tests.VerifyLoginAsSuperUser[https://www.cpxlegaltest.com/, SuperUser, Compex@2017](1)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException
+	at autoFW.TESTS.Compex_tests.VerifyLoginAsSuperUser(Compex_tests.java:64)
+
+autoFW.TESTS.Compex_tests.LoginAsSuperUser[https://www.cpxlegaltest.com/, SuperUser, Compex@2017](1)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException
+	at autoFW.TESTS.Compex_tests.LoginAsSuperUser(Compex_tests.java:56)
+
+autoFW.TESTS.Compex_tests.SearchByOrderNum1  Time elapsed: 0.045 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Input must be set
+	at autoFW.TESTS.Compex_tests.SearchByOrderNum1(Compex_tests.java:161)
+
+autoFW.TESTS.Compex_tests.SearchByClaimNum  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Input must be set
+	at autoFW.TESTS.Compex_tests.SearchByClaimNum(Compex_tests.java:173)
+
+autoFW.TESTS.Compex_tests.SearchByPlaintiff  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Input must be set
+	at autoFW.TESTS.Compex_tests.SearchByPlaintiff(Compex_tests.java:179)
+
+autoFW.TESTS.Compex_tests.SearchBycaseNum  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Input must be set
+	at autoFW.TESTS.Compex_tests.SearchBycaseNum(Compex_tests.java:185)
+
+autoFW.TESTS.Compex_tests.SearchBydefendant  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Input must be set
+	at autoFW.TESTS.Compex_tests.SearchBydefendant(Compex_tests.java:190)
+
+autoFW.TESTS.Compex_tests.SearchByattorney  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Input must be set
+	at autoFW.TESTS.Compex_tests.SearchByattorney(Compex_tests.java:195)
+
+autoFW.TESTS.Compex_tests.SearchByadjuster  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Input must be set
+	at autoFW.TESTS.Compex_tests.SearchByadjuster(Compex_tests.java:202)
+
+autoFW.TESTS.Compex_tests.SearchByFilm  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Input must be set
+	at autoFW.TESTS.Compex_tests.SearchByFilm(Compex_tests.java:209)
+
+autoFW.TESTS.Compex_tests.AddLocation  Time elapsed: 3.011 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Input must be set
+	at autoFW.TESTS.Compex_tests.AddLocation(Compex_tests.java:270)
+
+autoFW.TESTS.Compex_tests.Cancel_SingleOrderLocation  Time elapsed: 3.018 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Input must be set
+	at autoFW.TESTS.Compex_tests.Cancel_SingleOrderLocation(Compex_tests.java:252)
+
+autoFW.TESTS.Compex_tests.UploadDocument_SingleOrder  Time elapsed: 3.018 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Input must be set
+	at autoFW.TESTS.Compex_tests.UploadDocument_SingleOrder(Compex_tests.java:240)
+
+autoFW.TESTS.Compex_tests.AddComment_SingleOrderLocation  Time elapsed: 3.025 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Input must be set
+	at autoFW.TESTS.Compex_tests.AddComment_SingleOrderLocation(Compex_tests.java:258)
+
+autoFW.TESTS.Compex_tests.Logout  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Input must be set
+	at autoFW.TESTS.Compex_tests.Logout(Compex_tests.java:130)
+
+autoFW.TESTS.Cleanup.CleanupTest  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at autoFW.TESTS.Cleanup.CleanupTest(Cleanup.java:13)
+

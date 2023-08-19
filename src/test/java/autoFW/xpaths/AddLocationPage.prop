@@ -1,0 +1,5 @@
+input_searchLocation = //input[@id='search_loc_value']
+elem_autoComplete_list = //li[contains(@class,'ui-menu-item')][2]
+drp_recType = //select[@id='rectype']
+a_confirmSelection = //a[text()='Confirm Selection']
+a_submit = //div[@id='page-wizard-nav']/a[@id='formsubmitbutton']

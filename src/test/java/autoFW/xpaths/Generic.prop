@@ -1,0 +1,2 @@
+elem_ajaxLoaderSmall=//div[@class='loading-overlay-wrapper']
+elem_ajaxLoaderBig=//div[@id='ajaxBusy']

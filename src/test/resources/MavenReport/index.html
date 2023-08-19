@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 20 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Compex_TestSuite" class="navigator-link">
+              <span class="suite-name border-failed">Compex_TestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Compex_TestSuite" class="navigator-link ">
+                    <span>C:\Users\raghuwansh.shisode\Desktop\Compex Automation\2023-01-27\Compex\compex\src\test\java\TestNGSuites\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Compex_TestSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Compex_TestSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Compex_TestSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Compex_TestSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Compex_TestSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Compex_TestSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods, 20 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Compex_TestSuite" class="hide-methods failed suite-Compex_TestSuite"> (hide)</a> <!-- hide-methods failed suite-Compex_TestSuite -->
+                      <a href="#" panel-name="suite-Compex_TestSuite" class="show-methods failed suite-Compex_TestSuite"> (show)</a> <!-- show-methods failed suite-Compex_TestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-Compex_TestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Compex_TestSuite" title="autoFW.TESTS.Compex_tests" class="method navigator-link" hash-for-method="AddComment_SingleOrderLocation">AddComment_SingleOrderLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Compex_TestSuite" title="autoFW.TESTS.Compex_tests" class="method navigator-link" hash-for-method="AddLocation">AddLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Compex_TestSuite" title="autoFW.TESTS.Compex_tests" class="method navigator-link" hash-for-method="Cancel_SingleOrderLocation">Cancel_SingleOrderLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Compex_TestSuite" title="autoFW.TESTS.Cleanup" class="method navigator-link" hash-for-method="CleanupTest">CleanupTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Compex_TestSuite" title="autoFW.TESTS.Setup" class="method navigator-link" hash-for-method="Init">Init</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Compex_TestSuite" title="autoFW.TESTS.Compex_tests" class="method navigator-link" hash-for-method="LoginAsSuperUser(https://www.cpxlegaltest.com/, SuperUser, Compex@2017)">LoginAsSuperUser(https://www.cpxlegaltest.com/, SuperUser, Compex@2017)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Compex_TestSuite" title="autoFW.TESTS.Compex_tests" class="method navigator-link" hash-for-method="Logout">Logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Compex_TestSuite" title="autoFW.TESTS.Compex_tests" class="method navigator-link" hash-for-method="SearchByClaimNum">SearchByClaimNum</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Compex_TestSuite" title="autoFW.TESTS.Compex_tests" class="method navigator-link" hash-for-method="SearchByFilm">SearchByFilm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Compex_TestSuite" title="autoFW.TESTS.Compex_tests" class="method navigator-link" hash-for-method="SearchByOrderNum1">SearchByOrderNum1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Compex_TestSuite" title="autoFW.TESTS.Compex_tests" class="method navigator-link" hash-for-method="SearchByPlaintiff">SearchByPlaintiff</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Compex_TestSuite" title="autoFW.TESTS.Compex_tests" class="method navigator-link" hash-for-method="SearchByadjuster">SearchByadjuster</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Compex_TestSuite" title="autoFW.TESTS.Compex_tests" class="method navigator-link" hash-for-method="SearchByattorney">SearchByattorney</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Compex_TestSuite" title="autoFW.TESTS.Compex_tests" class="method navigator-link" hash-for-method="SearchBycaseNum">SearchBycaseNum</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Compex_TestSuite" title="autoFW.TESTS.Compex_tests" class="method navigator-link" hash-for-method="SearchBydefendant">SearchBydefendant</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Compex_TestSuite" title="autoFW.TESTS.Compex_tests" class="method navigator-link" hash-for-method="UploadDocument_SingleOrder">UploadDocument_SingleOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Compex_TestSuite" title="autoFW.TESTS.Compex_tests" class="method navigator-link" hash-for-method="VerifyLoginAsClientContact(https://www.cpxlegaltest.com/, teresam, Compex@2017)">VerifyLoginAsClientContact(https://www.cpxlegaltest.com/, teresam, Compex@2017)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Compex_TestSuite" title="autoFW.TESTS.Compex_tests" class="method navigator-link" hash-for-method="VerifyLoginAsClientManager(https://www.cpxlegaltest.com/, arjoshi, Compex@2017)">VerifyLoginAsClientManager(https://www.cpxlegaltest.com/, arjoshi, Compex@2017)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Compex_TestSuite" title="autoFW.TESTS.Compex_tests" class="method navigator-link" hash-for-method="VerifyLoginAsCustodian(https://www.cpxlegaltest.com/, TestCusto123, Compex@2017)">VerifyLoginAsCustodian(https://www.cpxlegaltest.com/, TestCusto123, Compex@2017)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Compex_TestSuite" title="autoFW.TESTS.Compex_tests" class="method navigator-link" hash-for-method="VerifyLoginAsSuperUser(https://www.cpxlegaltest.com/, SuperUser, Compex@2017)">VerifyLoginAsSuperUser(https://www.cpxlegaltest.com/, SuperUser, Compex@2017)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Compex_TestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Compex_TestSuite" class="panel Compex_TestSuite">
+          <div class="suite-Compex_TestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">autoFW.TESTS.Cleanup</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CleanupTest">
+                  </a> <!-- CleanupTest -->
+                  <span class="method-name">CleanupTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at autoFW.TESTS.Cleanup.CleanupTest(Cleanup.java:13)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Compex_TestSuite-class-failed -->
+          <div class="suite-Compex_TestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">autoFW.TESTS.Setup</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Init">
+                  </a> <!-- Init -->
+                  <span class="method-name">Init</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 108
+Current browser version is 116.0.5845.96 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-Q1UB2OV&apos;, ip: &apos;192.168.30.84&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], prefs: {download.default_directory: C:\Users\raghuwansh.shisode...}}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: [], prefs: {download.default_directory: C:\Users\raghuwansh.shisode...}}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:168)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:104)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:80)
+	at autoFW.TESTS.Setup.Init(Setup.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Compex_TestSuite-class-failed -->
+          <div class="suite-Compex_TestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">autoFW.TESTS.Compex_tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddComment_SingleOrderLocation">
+                  </a> <!-- AddComment_SingleOrderLocation -->
+                  <span class="method-name">AddComment_SingleOrderLocation</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.ExpandAllOrders(AUTFunctions.java:637)
+	at autoFW.autfns.AUTFunctions.AddComment(AUTFunctions.java:1283)
+	at autoFW.TESTS.Compex_tests.AddComment_SingleOrderLocation(Compex_tests.java:258)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddLocation">
+                  </a> <!-- AddLocation -->
+                  <span class="method-name">AddLocation</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.ExpandAllOrders(AUTFunctions.java:637)
+	at autoFW.autfns.AUTFunctions.AddLocation(AUTFunctions.java:1366)
+	at autoFW.TESTS.Compex_tests.AddLocation(Compex_tests.java:270)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Cancel_SingleOrderLocation">
+                  </a> <!-- Cancel_SingleOrderLocation -->
+                  <span class="method-name">Cancel_SingleOrderLocation</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.ExpandAllOrders(AUTFunctions.java:637)
+	at autoFW.autfns.AUTFunctions.CancelOrder(AUTFunctions.java:1199)
+	at autoFW.TESTS.Compex_tests.Cancel_SingleOrderLocation(Compex_tests.java:252)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginAsSuperUser(https://www.cpxlegaltest.com/, SuperUser, Compex@2017)">
+                  </a> <!-- LoginAsSuperUser(https://www.cpxlegaltest.com/, SuperUser, Compex@2017) -->
+                  <span class="method-name">LoginAsSuperUser</span>
+                  <span class="parameters">(https://www.cpxlegaltest.com/, SuperUser, Compex@2017)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at autoFW.autfns.AUTFunctions.loginWithGivenUserName(AUTFunctions.java:116)
+	at autoFW.TESTS.Compex_tests.LoginAsSuperUser(Compex_tests.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Logout">
+                  </a> <!-- Logout -->
+                  <span class="method-name">Logout</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.logout(AUTFunctions.java:177)
+	at autoFW.TESTS.Compex_tests.Logout(Compex_tests.java:130)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchByClaimNum">
+                  </a> <!-- SearchByClaimNum -->
+                  <span class="method-name">SearchByClaimNum</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchByClaimNum(AUTFunctions.java:662)
+	at autoFW.TESTS.Compex_tests.SearchByClaimNum(Compex_tests.java:173)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchByFilm">
+                  </a> <!-- SearchByFilm -->
+                  <span class="method-name">SearchByFilm</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchByFilm(AUTFunctions.java:700)
+	at autoFW.TESTS.Compex_tests.SearchByFilm(Compex_tests.java:209)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchByOrderNum1">
+                  </a> <!-- SearchByOrderNum1 -->
+                  <span class="method-name">SearchByOrderNum1</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchByOrderNum(AUTFunctions.java:562)
+	at autoFW.TESTS.Compex_tests.SearchByOrderNum1(Compex_tests.java:161)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchByPlaintiff">
+                  </a> <!-- SearchByPlaintiff -->
+                  <span class="method-name">SearchByPlaintiff</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchByPlaintiff(AUTFunctions.java:722)
+	at autoFW.TESTS.Compex_tests.SearchByPlaintiff(Compex_tests.java:179)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchByadjuster">
+                  </a> <!-- SearchByadjuster -->
+                  <span class="method-name">SearchByadjuster</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchByadjuster(AUTFunctions.java:915)
+	at autoFW.TESTS.Compex_tests.SearchByadjuster(Compex_tests.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchByattorney">
+                  </a> <!-- SearchByattorney -->
+                  <span class="method-name">SearchByattorney</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchByattorney(AUTFunctions.java:878)
+	at autoFW.TESTS.Compex_tests.SearchByattorney(Compex_tests.java:195)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchBycaseNum">
+                  </a> <!-- SearchBycaseNum -->
+                  <span class="method-name">SearchBycaseNum</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchBycaseNum(AUTFunctions.java:759)
+	at autoFW.TESTS.Compex_tests.SearchBycaseNum(Compex_tests.java:185)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchBydefendant">
+                  </a> <!-- SearchBydefendant -->
+                  <span class="method-name">SearchBydefendant</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.performSearch(AUTFunctions.java:601)
+	at autoFW.autfns.AUTFunctions.SearchBydefendant(AUTFunctions.java:840)
+	at autoFW.TESTS.Compex_tests.SearchBydefendant(Compex_tests.java:190)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UploadDocument_SingleOrder">
+                  </a> <!-- UploadDocument_SingleOrder -->
+                  <span class="method-name">UploadDocument_SingleOrder</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:56)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:128)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:61)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:48)
+	at autoFW.objects.ObjectUtilities.waitUntilElementIsVisible(ObjectUtilities.java:323)
+	at autoFW.autfns.AUTFunctions.waitForBigLoader(AUTFunctions.java:59)
+	at autoFW.autfns.AUTFunctions.ExpandAllOrders(AUTFunctions.java:637)
+	at autoFW.autfns.AUTFunctions.UploadDocument(AUTFunctions.java:1108)
+	at autoFW.TESTS.Compex_tests.UploadDocument_SingleOrder(Compex_tests.java:240)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyLoginAsClientContact(https://www.cpxlegaltest.com/, teresam, Compex@2017)">
+                  </a> <!-- VerifyLoginAsClientContact(https://www.cpxlegaltest.com/, teresam, Compex@2017) -->
+                  <span class="method-name">VerifyLoginAsClientContact</span>
+                  <span class="parameters">(https://www.cpxlegaltest.com/, teresam, Compex@2017)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at autoFW.autfns.AUTFunctions.loginWithGivenUserName(AUTFunctions.java:116)
+	at autoFW.TESTS.Compex_tests.VerifyLoginAsClientContact(Compex_tests.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyLoginAsClientManager(https://www.cpxlegaltest.com/, arjoshi, Compex@2017)">
+                  </a> <!-- VerifyLoginAsClientManager(https://www.cpxlegaltest.com/, arjoshi, Compex@2017) -->
+                  <span class="method-name">VerifyLoginAsClientManager</span>
+                  <span class="parameters">(https://www.cpxlegaltest.com/, arjoshi, Compex@2017)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at autoFW.autfns.AUTFunctions.loginWithGivenUserName(AUTFunctions.java:116)
+	at autoFW.TESTS.Compex_tests.VerifyLoginAsClientManager(Compex_tests.java:94)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyLoginAsCustodian(https://www.cpxlegaltest.com/, TestCusto123, Compex@2017)">
+                  </a> <!-- VerifyLoginAsCustodian(https://www.cpxlegaltest.com/, TestCusto123, Compex@2017) -->
+                  <span class="method-name">VerifyLoginAsCustodian</span>
+                  <span class="parameters">(https://www.cpxlegaltest.com/, TestCusto123, Compex@2017)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at autoFW.autfns.AUTFunctions.loginAsCustodian(AUTFunctions.java:150)
+	at autoFW.TESTS.Compex_tests.VerifyLoginAsCustodian(Compex_tests.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyLoginAsSuperUser(https://www.cpxlegaltest.com/, SuperUser, Compex@2017)">
+                  </a> <!-- VerifyLoginAsSuperUser(https://www.cpxlegaltest.com/, SuperUser, Compex@2017) -->
+                  <span class="method-name">VerifyLoginAsSuperUser</span>
+                  <span class="parameters">(https://www.cpxlegaltest.com/, SuperUser, Compex@2017)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at autoFW.autfns.AUTFunctions.loginWithGivenUserName(AUTFunctions.java:116)
+	at autoFW.TESTS.Compex_tests.VerifyLoginAsSuperUser(Compex_tests.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Compex_TestSuite-class-failed -->
+        </div> <!-- panel Compex_TestSuite -->
+        <div panel-name="test-xml-Compex_TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\raghuwansh.shisode\Desktop\Compex Automation\2023-01-27\Compex\compex\src\test\java\TestNGSuites\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Compex_TestSuite&quot; verbose=&quot;0&quot;&gt;
+  &lt;parameter name=&quot;SuperUsername&quot; value=&quot;SuperUser&quot;/&gt;
+  &lt;parameter name=&quot;CustodianPwd&quot; value=&quot;Compex@2017&quot;/&gt;
+  &lt;parameter name=&quot;CustodianUsername&quot; value=&quot;TestCusto123&quot;/&gt;
+  &lt;parameter name=&quot;ClientContactUsername&quot; value=&quot;teresam&quot;/&gt;
+  &lt;parameter name=&quot;ClientManagerUsername&quot; value=&quot;arjoshi&quot;/&gt;
+  &lt;parameter name=&quot;ClientManagerPwd&quot; value=&quot;Compex@2017&quot;/&gt;
+  &lt;parameter name=&quot;ClientContactPwd&quot; value=&quot;Compex@2017&quot;/&gt;
+  &lt;parameter name=&quot;AUTurl&quot; value=&quot;https://www.cpxlegaltest.com/&quot;/&gt;
+  &lt;parameter name=&quot;SuperPwd&quot; value=&quot;Compex@2017&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Compex_TestsList01&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;autoFW.TESTS.Setup&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;Init&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- autoFW.TESTS.Setup --&gt;
+      &lt;class name=&quot;autoFW.TESTS.Compex_tests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;VerifyLoginAsCustodian&quot;/&gt;
+          &lt;include name=&quot;VerifyLoginAsClientContact&quot;/&gt;
+          &lt;include name=&quot;VerifyLoginAsClientManager&quot;/&gt;
+          &lt;include name=&quot;VerifyLoginAsSuperUser&quot;/&gt;
+          &lt;include name=&quot;LoginAsSuperUser&quot;/&gt;
+          &lt;include name=&quot;SearchByOrderNum1&quot;/&gt;
+          &lt;include name=&quot;SearchByClaimNum&quot;/&gt;
+          &lt;include name=&quot;SearchByPlaintiff&quot;/&gt;
+          &lt;include name=&quot;SearchBycaseNum&quot;/&gt;
+          &lt;include name=&quot;SearchBydefendant&quot;/&gt;
+          &lt;include name=&quot;SearchByattorney&quot;/&gt;
+          &lt;include name=&quot;SearchByadjuster&quot;/&gt;
+          &lt;include name=&quot;SearchByFilm&quot;/&gt;
+          &lt;include name=&quot;AddLocation&quot;/&gt;
+          &lt;include name=&quot;Cancel_SingleOrderLocation&quot;/&gt;
+          &lt;include name=&quot;UploadDocument_SingleOrder&quot;/&gt;
+          &lt;include name=&quot;AddComment_SingleOrderLocation&quot;/&gt;
+          &lt;include name=&quot;Logout&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- autoFW.TESTS.Compex_tests --&gt;
+      &lt;class name=&quot;autoFW.TESTS.Cleanup&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;CleanupTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- autoFW.TESTS.Cleanup --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Compex_TestsList01 --&gt;
+&lt;/suite&gt; &lt;!-- Compex_TestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Compex_TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Compex_TestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Compex_TestsList01 (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Compex_TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Compex_TestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Compex_TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Compex_TestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Compex_TestSuite');
+function tableData_Compex_TestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Init')
+data.setCell(0, 2, 'autoFW.TESTS.Setup')
+data.setCell(0, 3, 8335);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'AddComment_SingleOrderLocation')
+data.setCell(1, 2, 'autoFW.TESTS.Compex_tests')
+data.setCell(1, 3, 3024);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Cancel_SingleOrderLocation')
+data.setCell(2, 2, 'autoFW.TESTS.Compex_tests')
+data.setCell(2, 3, 3016);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'UploadDocument_SingleOrder')
+data.setCell(3, 2, 'autoFW.TESTS.Compex_tests')
+data.setCell(3, 3, 3015);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'AddLocation')
+data.setCell(4, 2, 'autoFW.TESTS.Compex_tests')
+data.setCell(4, 3, 3009);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'SearchByOrderNum1')
+data.setCell(5, 2, 'autoFW.TESTS.Compex_tests')
+data.setCell(5, 3, 43);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'VerifyLoginAsCustodian')
+data.setCell(6, 2, 'autoFW.TESTS.Compex_tests')
+data.setCell(6, 3, 5);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'SearchByFilm')
+data.setCell(7, 2, 'autoFW.TESTS.Compex_tests')
+data.setCell(7, 3, 5);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'SearchByPlaintiff')
+data.setCell(8, 2, 'autoFW.TESTS.Compex_tests')
+data.setCell(8, 3, 4);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'SearchBydefendant')
+data.setCell(9, 2, 'autoFW.TESTS.Compex_tests')
+data.setCell(9, 3, 4);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'Logout')
+data.setCell(10, 2, 'autoFW.TESTS.Compex_tests')
+data.setCell(10, 3, 4);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'SearchByattorney')
+data.setCell(11, 2, 'autoFW.TESTS.Compex_tests')
+data.setCell(11, 3, 4);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'SearchByClaimNum')
+data.setCell(12, 2, 'autoFW.TESTS.Compex_tests')
+data.setCell(12, 3, 4);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'SearchBycaseNum')
+data.setCell(13, 2, 'autoFW.TESTS.Compex_tests')
+data.setCell(13, 3, 4);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'SearchByadjuster')
+data.setCell(14, 2, 'autoFW.TESTS.Compex_tests')
+data.setCell(14, 3, 4);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'LoginAsSuperUser')
+data.setCell(15, 2, 'autoFW.TESTS.Compex_tests')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'VerifyLoginAsSuperUser')
+data.setCell(16, 2, 'autoFW.TESTS.Compex_tests')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'VerifyLoginAsClientContact')
+data.setCell(17, 2, 'autoFW.TESTS.Compex_tests')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'VerifyLoginAsClientManager')
+data.setCell(18, 2, 'autoFW.TESTS.Compex_tests')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'CleanupTest')
+data.setCell(19, 2, 'autoFW.TESTS.Cleanup')
+data.setCell(19, 3, 0);
+window.suiteTableData['Compex_TestSuite']= { tableData: data, tableDiv: 'times-div-Compex_TestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <div id="times-div-Compex_TestSuite">
+              </div> <!-- times-div-Compex_TestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Compex_TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Compex_TestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">LoginAsSuperUser(https://www.cpxlegaltest.com/, SuperUser, Compex@2017)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Logging in at url: https://www.cpxlegaltest.com/<br/ >User: SuperUser<br/ >Pwd: Compex@2017<br /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">SearchByPlaintiff</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Searching for orders with Plaintiff Name: Test1<br /></span>
+                <span class="reporter-method-output">Waiting for bigLoader to appear<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">AddLocation</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Waiting for bigLoader to appear<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyLoginAsCustodian(https://www.cpxlegaltest.com/, TestCusto123, Compex@2017)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Logging in at url: https://www.cpxlegaltest.com/<br/ >Custodian User: TestCusto123<br/ >Pwd: Compex@2017<br /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">SearchBydefendant</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Searching for orders with Defendant : Robert Crown<br /></span>
+                <span class="reporter-method-output">Waiting for bigLoader to appear<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">SearchByOrderNum1</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Searching for order: CA1094395<br /></span>
+                <span class="reporter-method-output">Waiting for bigLoader to appear<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Logout</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Waiting for bigLoader to appear<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyLoginAsSuperUser(https://www.cpxlegaltest.com/, SuperUser, Compex@2017)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Logging in at url: https://www.cpxlegaltest.com/<br/ >User: SuperUser<br/ >Pwd: Compex@2017<br /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">AddComment_SingleOrderLocation</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Waiting for bigLoader to appear<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyLoginAsClientContact(https://www.cpxlegaltest.com/, teresam, Compex@2017)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Logging in at url: https://www.cpxlegaltest.com/<br/ >User: teresam<br/ >Pwd: Compex@2017<br /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">UploadDocument_SingleOrder</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Waiting for bigLoader to appear<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">SearchByattorney</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Searching for orders with Attorney : Michael Spongeberg (123)<br /></span>
+                <span class="reporter-method-output">Waiting for bigLoader to appear<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyLoginAsClientManager(https://www.cpxlegaltest.com/, arjoshi, Compex@2017)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Logging in at url: https://www.cpxlegaltest.com/<br/ >User: arjoshi<br/ >Pwd: Compex@2017<br /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">SearchByClaimNum</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Searching for orders with claim #: 45678<br /></span>
+                <span class="reporter-method-output">Waiting for bigLoader to appear<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">SearchBycaseNum</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Searching for orders with caseNum : 7777777<br /></span>
+                <span class="reporter-method-output">Waiting for bigLoader to appear<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Cancel_SingleOrderLocation</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Waiting for bigLoader to appear<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">SearchByFilm</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Searching for order (with Film) : CA1094247 --> 001<br /></span>
+                <span class="reporter-method-output">Waiting for bigLoader to appear<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">SearchByadjuster</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Searching for orders with adjuster : Adam Dodge<br /></span>
+                <span class="reporter-method-output">Waiting for bigLoader to appear<br /></span>
+                <span class="reporter-method-output">waitUntilElementIsVisible: For element with xpath "//div[@id='ajaxBusy']"<br /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Compex_TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">16 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">autoFW.TESTS.Compex_tests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">UploadDocument_FullOrder</span>
+                <br/>
+                <span class="ignored-method-name">SearchByOrderingContact</span>
+                <br/>
+                <span class="ignored-method-name">SearchByfileNum</span>
+                <br/>
+                <span class="ignored-method-name">SearchOrder</span>
+                <br/>
+                <span class="ignored-method-name">AddComment_FullOrder</span>
+                <br/>
+                <span class="ignored-method-name">VerifyClientSwitch</span>
+                <br/>
+                <span class="ignored-method-name">LoginAsClientContact</span>
+                <br/>
+                <span class="ignored-method-name">SearchByrecordLocation</span>
+                <br/>
+                <span class="ignored-method-name">Cancel_FullOrder</span>
+                <br/>
+                <span class="ignored-method-name">LoginAsClientManager</span>
+                <br/>
+                <span class="ignored-method-name">DownloadDocument_SingleOrderLocation</span>
+                <br/>
+                <span class="ignored-method-name">SearchByrecordInfo_lastName</span>
+                <br/>
+                <span class="ignored-method-name">DownloadDocument_FullOrder</span>
+                <br/>
+                <span class="ignored-method-name">DemoSearchOrder</span>
+                <br/>
+                <span class="ignored-method-name">SearchByOrderNum2</span>
+                <br/>
+                <span class="ignored-method-name">UploadDocument_SingleOrderLocation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Compex_TestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">autoFW.TESTS.Setup</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">autoFW.TESTS.Compex_tests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testSetup</span>
+                <span class="method-start">8359 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyLoginAsCustodian(https://www.cpxlegaltest.com/, TestCusto123, Compex@2017)</span>
+                <span class="method-start">8386 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyLoginAsClientContact(https://www.cpxlegaltest.com/, teresam, Compex@2017)</span>
+                <span class="method-start">8394 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyLoginAsClientManager(https://www.cpxlegaltest.com/, arjoshi, Compex@2017)</span>
+                <span class="method-start">8397 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyLoginAsSuperUser(https://www.cpxlegaltest.com/, SuperUser, Compex@2017)</span>
+                <span class="method-start">8400 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginAsSuperUser(https://www.cpxlegaltest.com/, SuperUser, Compex@2017)</span>
+                <span class="method-start">8403 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SearchByOrderNum1</span>
+                <span class="method-start">8406 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SearchByClaimNum</span>
+                <span class="method-start">8452 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SearchByPlaintiff</span>
+                <span class="method-start">8458 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SearchBycaseNum</span>
+                <span class="method-start">8463 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SearchBydefendant</span>
+                <span class="method-start">8469 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SearchByattorney</span>
+                <span class="method-start">8474 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SearchByadjuster</span>
+                <span class="method-start">8480 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SearchByFilm</span>
+                <span class="method-start">8486 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AddLocation</span>
+                <span class="method-start">8492 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Cancel_SingleOrderLocation</span>
+                <span class="method-start">11503 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">UploadDocument_SingleOrder</span>
+                <span class="method-start">14521 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AddComment_SingleOrderLocation</span>
+                <span class="method-start">17538 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Logout</span>
+                <span class="method-start">20563 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">autoFW.TESTS.Cleanup</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CleanupTest</span>
+                <span class="method-start">20569 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

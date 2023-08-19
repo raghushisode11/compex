@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Compex_TestSuite">
+
+	<parameter name="AUTurl"
+		value="https://www.cpxlegaltest.com/" />
+	<parameter name="CustodianUsername" value="TestCusto123" />
+	<parameter name="CustodianPwd" value="Compex@2017" />
+	<parameter name="SuperUsername" value="SuperUser" />
+	<parameter name="SuperPwd" value="Compex@2017" />
+	<parameter name="ClientManagerUsername" value="arjoshi" />
+	<parameter name="ClientManagerPwd" value="Compex@2017" />
+	<parameter name="ClientContactUsername" value="teresam" />
+	<parameter name="ClientContactPwd" value="Compex@2017" />
+
+	  
+	<test name="Compex_TestsList01" preserve-order="true">
+		     
+		<classes>
+			<class name="autoFW.TESTS.Setup">
+				             
+				<methods>
+					<include name="Init" />
+					              
+				</methods>
+				   
+				          
+			</class>
+			<class name="autoFW.TESTS.Compex_tests">
+				             
+				<methods>
+					<!--  Logins -->
+					 
+					<include name="VerifyLoginAsCustodian" />
+					<include name="VerifyLoginAsClientContact" />
+					<include name="VerifyLoginAsClientManager" />
+					<include name="VerifyLoginAsSuperUser" /> 
+					
+					<include name="LoginAsSuperUser" />
+				   
+				    <include name="SearchByOrderNum1" />
+				    <include name="SearchByClaimNum"/> 
+				    <include name="SearchByPlaintiff"/> 
+				    <include name="SearchBycaseNum"/> 
+			        <include name="SearchBydefendant"/>
+				    <include name="SearchByattorney"/>
+				    <include name="SearchByadjuster"/> 
+				    <include name="SearchByFilm"/> 
+				    <include name="AddLocation"/> 
+				    <include name="Cancel_SingleOrderLocation"/>
+				   
+				    <include name="UploadDocument_SingleOrder"/> 
+				    <include name="AddComment_SingleOrderLocation"/>   
+                      
+                    
+                   <!-- <include name="AddComment_FullOrder"/>
+                        <include name="DownloadDocument_FullOrder"/>
+                        <include name="UploadDocument_FullOrder"/>
+                        <include name="SearchByrecordInfo_lastName"/> 
+				        <include name="SearchByrecordLocation"/>  
+				        <include name="SearchByOrderingContact"/> 
+				        <include name="Cancel_FullOrder"/>  -->
+				       
+				    <include name="Logout" /> 
+            
+				</methods> 
+				</class>
+			<class name="autoFW.TESTS.Cleanup">
+			<methods>
+					<include name="CleanupTest" />					              
+				</methods>				   
+			</class>
+			     
+		</classes> 
+		 
+	</test>
+	 
+</suite> 
